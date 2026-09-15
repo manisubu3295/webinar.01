@@ -10,6 +10,7 @@ import { infraTypeGroups } from '@/content/raw/infraTypeGroups';
 import { comparisonData } from '@/content/raw/comparisonData';
 import { quizData } from '@/content/raw/quizData';
 import { aiImpact } from '@/content/aiImpact';
+import { careerPath } from '@/content/careerPath';
 
 export type JumpTarget = { label: string; tag: string; index: number };
 
@@ -71,6 +72,12 @@ export function buildJumpTargets(slides: Slide[], jumpIndex: JumpIndex): JumpTar
     if (!aiImpact[d.seg]) return;
     const idx = slides.findIndex((s) => s.kind === 'aiImpact' && s.seg === d.seg);
     if (idx >= 0) targets.push({ label: `AI Impact — ${d.title}`, tag: 'AI Impact', index: idx });
+  });
+
+  moduleDividers.forEach((d) => {
+    if (!careerPath[d.seg]) return;
+    const idx = slides.findIndex((s) => s.kind === 'career' && s.seg === d.seg);
+    if (idx >= 0) targets.push({ label: careerPath[d.seg].title, tag: 'Career Path', index: idx });
   });
 
   return targets;

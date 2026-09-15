@@ -28,6 +28,17 @@ export function InfraTypeOverviewSlide({ typeKey }: { typeKey: string }) {
         </div>
         <h3>When to use it</h3>
         <div className="example-box">{typeGroup.whenToUse}</div>
+        {typeKey === 'orchestration' && (
+          <>
+            <h3>Server vs. Docker vs. Container</h3>
+            {/* eslint-disable-next-line @next/next/no-img-element -- static export, external asset in /public */}
+            <img
+              src="/images/ai-impact/ai-impact-devops-server-docker-container.png"
+              alt="A layered diagram showing a server running Docker, which runs several isolated containers, plus a before/after comparison of apps installed directly versus sealed in containers"
+              style={{ width: '100%', maxWidth: 720, borderRadius: 6, marginBottom: 4 }}
+            />
+          </>
+        )}
         {HIGHLIGHTABLE.has(typeKey) && (
           <>
             <h3>Sketch: Where This Layer Sits</h3>

@@ -1,6 +1,6 @@
 import type { Slide } from '@/lib/types';
 import { anchorSlides } from '@/content/anchorSlides';
-import { titleCoverImage, dividerImageBySeg, anchorImageByAnchorId, aiImpactImageBySeg } from '@/lib/dividerImages';
+import { titleCoverImage, dividerImageBySeg, anchorImageByAnchorId, aiImpactImageBySeg, careerPathImageBySeg } from '@/lib/dividerImages';
 
 // The only two slides that keep a 3D scene: the opening agenda (right
 // after the title) and the architecture walkthrough — one hero moment at
@@ -48,6 +48,8 @@ export function slideMeta(slide: Slide): { className: string; sceneId: string | 
       return { className: 'detail-slide text-only', sceneId: undefined, imageSrc: undefined };
     case 'aiImpact':
       return { className: 'detail-slide ai-impact-slide', sceneId: undefined, imageSrc: aiImpactImageBySeg[slide.seg] };
+    case 'career':
+      return { className: 'detail-slide career-slide', sceneId: undefined, imageSrc: careerPathImageBySeg[slide.seg] };
   }
 }
 
@@ -67,6 +69,7 @@ const KIND_ICON: Partial<Record<Slide['kind'], string>> = {
   comparison: '/images/kind-icons/comparison.webp',
   quiz: '/images/kind-icons/quiz.webp',
   aiImpact: '/images/kind-icons/aiImpact.webp',
+  career: '/images/kind-icons/career.webp',
 };
 
 export function slideKindIcon(slide: Slide): string | undefined {

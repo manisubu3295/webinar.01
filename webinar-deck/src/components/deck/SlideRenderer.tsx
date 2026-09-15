@@ -12,6 +12,7 @@ import { InfraTypeOverviewSlide } from '@/components/slides/InfraTypeOverviewSli
 import { ComparisonSlide } from '@/components/slides/ComparisonSlide';
 import { QuizSlide } from '@/components/slides/QuizSlide';
 import { AiImpactSlide } from '@/components/slides/AiImpactSlide';
+import { CareerPathSlide } from '@/components/slides/CareerPathSlide';
 
 export function SlideRenderer({ slide }: { slide: Slide }) {
   switch (slide.kind) {
@@ -41,6 +42,8 @@ export function SlideRenderer({ slide }: { slide: Slide }) {
       return <QuizSlide groupKey={slide.groupKey} />;
     case 'aiImpact':
       return <AiImpactSlide seg={slide.seg} />;
+    case 'career':
+      return <CareerPathSlide seg={slide.seg} />;
     default:
       return null;
   }

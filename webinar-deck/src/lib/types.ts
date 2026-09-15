@@ -111,6 +111,7 @@ export type Slide =
     }
   | { kind: 'comparison'; seg: string; groupKey: GroupKey; sceneId: string; sub: string }
   | { kind: 'quiz'; seg: string; groupKey: GroupKey; sub: string }
-  | { kind: 'aiImpact'; seg: string };
+  | { kind: 'aiImpact'; seg: string }
+  | { kind: 'career'; seg: string };
 
 export type JumpIndex = Record<string, Record<string, number>>;

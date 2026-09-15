@@ -42,3 +42,15 @@ export const aiImpactImageBySeg: Record<string, string> = {
   '5': '/images/ai-impact/ai-impact-05-build-testing.png',
   '6': '/images/ai-impact/ai-impact-06-devops-infrastructure.png',
 };
+
+// Career Path roadmap illustrations — one per content module (1-6),
+// plus the module-7 full-stack capstone roadmap.
+export const careerPathImageBySeg: Record<string, string> = {
+  '1': '/images/career/career-01-requirement-gathering.png',
+  '2': '/images/career/career-02-technology-selection.png',
+  '3': '/images/career/career-03-database.png',
+  '4': '/images/career/career-04-architecture.png',
+  '5': '/images/career/career-05-build-testing.png',
+  '6': '/images/career/career-06-devops-infrastructure.png',
+  '7': '/images/career/career-07-fullstack-roadmap.png',
+};

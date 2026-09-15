@@ -5,6 +5,7 @@ import { dbTypeGroups } from '@/content/raw/dbTypeGroups';
 import { infraTypeGroups } from '@/content/raw/infraTypeGroups';
 import { quizData } from '@/content/raw/quizData';
 import { aiImpact } from '@/content/aiImpact';
+import { careerPath } from '@/content/careerPath';
 import type { JumpIndex, Slide } from './types';
 
 /**
@@ -85,6 +86,14 @@ export function buildDeck(): { slides: Slide[]; jumpIndex: JumpIndex } {
     if (aiImpact[divider.seg]) {
       slides.push({ kind: 'aiImpact', seg: divider.seg });
       jump('aiImpact')[divider.seg] = slides.length - 1;
+    }
+
+    // Right after that, one Career Path roadmap slide — modules 1-6 get
+    // a role-ladder roadmap, module 7 (Closing) gets the full-stack
+    // capstone roadmap tying all six together.
+    if (careerPath[divider.seg]) {
+      slides.push({ kind: 'career', seg: divider.seg });
+      jump('career')[divider.seg] = slides.length - 1;
     }
   }
 
