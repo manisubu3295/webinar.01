@@ -150,6 +150,54 @@ export const drawDbSchemaSketch: SketchDrawFn = (rc, svg) => {
 };
 
 /* ---------------------------------------------------------
+   A real sequence diagram: named actors as vertical lifelines,
+   numbered messages between them in time order — the one diagram
+   type the flow/architecture sketches above don't cover.
+--------------------------------------------------------- */
+export function drawSequence(actors: string[], steps: { from: number; to: number; label: string; returns?: boolean }[]): SketchDrawFn {
+  return (rc, svg) => {
+    const top = 34;
+    const rowH = 30;
+    const laneGap = 480 / (actors.length + 0.4);
+    const laneX = actors.map((_, i) => 40 + i * laneGap);
+    const bottom = top + steps.length * rowH + 14;
+
+    actors.forEach((name, i) => {
+      svg.appendChild(rc.rectangle(laneX[i] - 42, 4, 84, 26, { stroke: ROYAL, strokeWidth: 1.5, roughness: 1.6, fill: MIST, fillStyle: 'hachure' }));
+      svgLabel(svg, laneX[i], 21, name, ROYAL, 11);
+      svg.appendChild(rc.line(laneX[i], 30, laneX[i], bottom, { stroke: MUTED, strokeWidth: 1, roughness: 1.2, strokeLineDash: [3, 4] }));
+    });
+
+    steps.forEach((step, i) => {
+      const y = top + i * rowH + rowH / 2;
+      const x1 = laneX[step.from];
+      const x2 = laneX[step.to];
+      const color = step.returns ? MUTED : GOLD;
+      svg.appendChild(rc.line(x1, y, x2, y, { stroke: color, strokeWidth: 1.8, roughness: 1.4, strokeLineDash: step.returns ? [4, 3] : undefined }));
+      const angle = x2 > x1 ? 0 : Math.PI;
+      const s = 6;
+      const tip: [number, number] = [x2, y];
+      const left: [number, number] = [x2 - s * Math.cos(angle - 0.5), y - s * Math.sin(angle - 0.5)];
+      const right: [number, number] = [x2 - s * Math.cos(angle + 0.5), y - s * Math.sin(angle + 0.5)];
+      svg.appendChild(rc.polygon([tip, left, right], { stroke: color, fill: color, fillStyle: 'solid', roughness: 1.1 }));
+      svgLabel(svg, (x1 + x2) / 2, y - 6, `${i + 1}. ${step.label}`, INK, 10);
+    });
+  };
+}
+
+export const drawReturnSequenceSketch: SketchDrawFn = drawSequence(
+  ['Customer', 'Counter', 'App', 'Database'],
+  [
+    { from: 0, to: 1, label: 'wants to return an item' },
+    { from: 1, to: 2, label: 'look up the original bill' },
+    { from: 2, to: 3, label: 'find the invoice' },
+    { from: 3, to: 2, label: 'invoice found', returns: true },
+    { from: 2, to: 1, label: 'refund amount calculated' },
+    { from: 1, to: 0, label: 'refund processed' },
+  ],
+);
+
+/* ---------------------------------------------------------
    Shared primitives for the smaller diagrams below — a person
    as a labeled circle (matching the deck's own avatar-chip
    language), and an arrow with a real head instead of a bare line.
@@ -453,6 +501,20 @@ export function drawInfraStackHighlighted(highlight: 'appserver' | 'orchestratio
     });
   };
 }
+
+/* ---------------------------------------------------------
+   Closing: what AI changed in this build, and what still came
+   down to judgment — two columns, side by side.
+--------------------------------------------------------- */
+export const drawClosingSketch: SketchDrawFn = (rc, svg) => {
+  svg.appendChild(rc.rectangle(15, 10, 195, 150, { stroke: GOLD, strokeWidth: 2, roughness: 1.8, fill: AMBER_WASH, fillStyle: 'hachure' }));
+  svgLabel(svg, 112, 32, 'Faster now', GOLD, 13);
+  ['Drafting requirements', 'Comparing tech options', 'Writing boilerplate', 'Generating tests'].forEach((t, i) => svgLabel(svg, 112, 56 + i * 22, t, INK, 10));
+
+  svg.appendChild(rc.rectangle(230, 10, 195, 150, { stroke: ROYAL, strokeWidth: 2, roughness: 1.8, fill: MIST, fillStyle: 'hachure' }));
+  svgLabel(svg, 327, 32, 'Still judgment', ROYAL, 13);
+  ['What to build', 'Owning an outage', 'When to say no', 'What to check'].forEach((t, i) => svgLabel(svg, 327, 56 + i * 22, t, INK, 10));
+};
 
 /* ---------------------------------------------------------
    Module roadmap — the 8-stage journey, current stage lit.

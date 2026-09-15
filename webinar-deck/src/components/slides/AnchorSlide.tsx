@@ -11,12 +11,13 @@ import {
   drawChooseScaleSketch,
   drawDataShapesSketch,
   drawCicdSketch,
+  drawClosingSketch,
   type SketchEntry,
 } from '@/components/diagrams/sketches';
 
 // One lead or supporting diagram per module-opening slide, grounded in the
-// same retail-billing narrative the tutorials use. Slides not listed here
-// (Closing, Q&A) are reflective wrap-ups and don't need one.
+// same retail-billing narrative the tutorials use. Q&A (slide-12) is an
+// open floor with nothing to diagram, so it's left without one.
 const anchorSketches: Record<string, SketchEntry & { position: 'before' | 'after' }> = {
   'slide-2': { title: 'From One Sentence to a Real System', draw: drawRequirementGapSketch, viewBox: '0 0 360 130', height: 130, position: 'before' },
   'slide-3': { title: 'Five Ways to Gather', draw: drawGatherOverviewSketch, viewBox: '0 0 330 90', height: 90, position: 'before' },
@@ -26,6 +27,7 @@ const anchorSketches: Record<string, SketchEntry & { position: 'before' | 'after
   'slide-7': { title: 'Three Shapes of Data', draw: drawDataShapesSketch, viewBox: '0 0 380 125', height: 125, position: 'before' },
   'slide-9': { title: 'The Testing Pyramid', draw: drawTestPyramidSketch, viewBox: '0 0 340 140', height: 140, position: 'after' },
   'slide-10': { title: 'Ship Safely, Automatically', draw: drawCicdSketch, viewBox: '0 0 480 90', height: 90, position: 'before' },
+  'slide-11': { title: 'What Changed, What Didn’t', draw: drawClosingSketch, viewBox: '0 0 440 170', height: 170, position: 'after' },
 };
 
 export function AnchorSlide({ anchorId }: { anchorId: string }) {

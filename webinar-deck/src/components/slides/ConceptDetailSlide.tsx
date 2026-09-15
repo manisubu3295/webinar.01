@@ -21,6 +21,7 @@ import {
   drawIntegrationTestSketch,
   drawConcurrencySketch,
   drawMonitoringSketch,
+  drawReturnSequenceSketch,
   type SketchEntry,
 } from '@/components/diagrams/sketches';
 
@@ -90,6 +91,12 @@ export function ConceptDetailSlide({ groupKey, itemKey, index, total }: { groupK
           <>
             <h3>Sketch: The Shape We Actually Build</h3>
             <RoughSketch draw={drawHybridSketch} viewBox="0 0 350 175" height={175} maxWidth={400} />
+          </>
+        )}
+        {itemKey === 'interview' && (
+          <>
+            <h3>Sequence: A Return, Start to Finish</h3>
+            <RoughSketch draw={drawReturnSequenceSketch} viewBox="0 0 480 225" height={225} maxWidth={560} />
           </>
         )}
       </div>

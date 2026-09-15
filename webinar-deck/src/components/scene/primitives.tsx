@@ -154,11 +154,17 @@ export function LineBetween({ from, to, color = GOLD, opacity = 0.4 }: { from: [
 export function SceneIntro({ children }: { children: React.ReactNode }) {
   const ref = useRef<THREE.Group>(null);
   const born = useRef(0);
+  const reducedMotion = useRef(false);
   useEffect(() => {
     born.current = performance.now();
+    reducedMotion.current = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
   }, []);
   useFrame((_, delta) => {
     if (!ref.current) return;
+    if (reducedMotion.current) {
+      ref.current.scale.setScalar(1);
+      return;
+    }
     const age = (performance.now() - born.current) / 1000;
     const target = 1;
     const start = 0.82;
