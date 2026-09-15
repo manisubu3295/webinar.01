@@ -1,0 +1,11 @@
+# Node / Next.js build artifacts (webinar-deck)
+webinar-deck/node_modules
+webinar-deck/.next
+webinar-deck/out
+webinar-deck/*.tsbuildinfo
+webinar-deck/next-env.d.ts
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
