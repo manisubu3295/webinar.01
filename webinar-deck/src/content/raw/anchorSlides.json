@@ -1,0 +1,597 @@
+[
+  {
+    "id": "slide-2",
+    "seg": "1",
+    "eyebrow": "SEGMENT 01 · 20 MIN",
+    "title": "Introduction &\nRequirement Gathering",
+    "techList": [
+      {
+        "num": "1",
+        "name": "Fully live",
+        "desc": "Every screen you'll see is a real, running system — not slides pretending to be a demo.",
+        "clickable": false
+      },
+      {
+        "num": "2",
+        "name": "One requirement, start to finish",
+        "desc": "The same billing system moves through every segment today — gather, choose, build, deploy, run.",
+        "clickable": false
+      },
+      {
+        "num": "3",
+        "name": "Ask anytime",
+        "desc": "Questions go through Pigeonhole throughout — you don't have to wait for the Q&A slot.",
+        "clickable": false
+      },
+      {
+        "num": "4",
+        "name": "Four angles, one panel",
+        "desc": "Enterprise banking infrastructure, data architecture, product management, and hands-on engineering.",
+        "clickable": false
+      }
+    ],
+    "meta": [
+      {
+        "label": "SPEAKER",
+        "value": "Manikandan"
+      },
+      {
+        "label": "TIME",
+        "value": "9:50 – 10:10 AM"
+      }
+    ],
+    "sceneId": "c2"
+  },
+  {
+    "id": "slide-3",
+    "seg": "1",
+    "expand": "gather",
+    "eyebrow": "SEGMENT 01 · REQUIREMENT GATHERING · 5 MIN",
+    "title": "Five Ways\nto Gather",
+    "techList": [
+      {
+        "num": "1",
+        "name": "Interview",
+        "desc": "Prepared questions, one person at a time, written down.",
+        "clickable": true,
+        "key": "interview",
+        "tutorial": true
+      },
+      {
+        "num": "2",
+        "name": "Observation",
+        "desc": "Sit and watch the real work happen. Say nothing.",
+        "clickable": true,
+        "key": "observation",
+        "tutorial": true
+      },
+      {
+        "num": "3",
+        "name": "Document Study",
+        "desc": "Collect every bill, register, form, and spreadsheet in use today.",
+        "clickable": true,
+        "key": "docstudy",
+        "tutorial": true
+      },
+      {
+        "num": "4",
+        "name": "Prototype",
+        "desc": "A clickable mock-up shown before any real code.",
+        "clickable": true,
+        "key": "prototype",
+        "tutorial": true
+      },
+      {
+        "num": "5",
+        "name": "Workshop",
+        "desc": "Get the disagreeing departments in one room, facilitated.",
+        "clickable": true,
+        "key": "workshop",
+        "tutorial": true
+      }
+    ],
+    "meta": [
+      {
+        "label": "SPEAKER",
+        "value": "Manikandan"
+      },
+      {
+        "label": "DURATION",
+        "value": "5 min"
+      }
+    ],
+    "sceneId": "c3"
+  },
+  {
+    "id": "slide-4",
+    "seg": "2",
+    "expand": "frontend",
+    "eyebrow": "SEGMENT 02 · FRONTEND TECHNOLOGY · 7 MIN",
+    "title": "Frontend\nTechnology",
+    "techList": [
+      {
+        "num": "1",
+        "name": "React",
+        "desc": "Massive ecosystem and hiring pool. The default choice for most product teams.",
+        "clickable": true,
+        "key": "react",
+        "tutorial": true
+      },
+      {
+        "num": "2",
+        "name": "Angular",
+        "desc": "Batteries-included, TypeScript-first. Best for large enterprise teams needing structure.",
+        "clickable": true,
+        "key": "angular",
+        "tutorial": true
+      },
+      {
+        "num": "3",
+        "name": "Vue",
+        "desc": "Gentle learning curve, flexible. Great for small-to-mid teams shipping fast.",
+        "clickable": true,
+        "key": "vue",
+        "tutorial": true
+      },
+      {
+        "num": "4",
+        "name": "Svelte",
+        "desc": "Compiles away at build time, smallest bundles. Best when performance is the top priority.",
+        "clickable": true,
+        "key": "svelte",
+        "tutorial": true
+      },
+      {
+        "num": "5",
+        "name": "Next.js",
+        "desc": "React plus routing, SSR, and static generation built in. Best for SEO-heavy or full-stack apps.",
+        "clickable": true,
+        "key": "nextjs",
+        "tutorial": true
+      }
+    ],
+    "meta": [
+      {
+        "label": "SPEAKER",
+        "value": "Manikandan"
+      },
+      {
+        "label": "DURATION",
+        "value": "7 min"
+      }
+    ],
+    "compareGroup": "frontend",
+    "sceneId": "c4"
+  },
+  {
+    "id": "slide-5",
+    "seg": "2",
+    "expand": "backend",
+    "eyebrow": "SEGMENT 02 · BACKEND TECHNOLOGY · 7 MIN",
+    "title": "Backend\nTechnology",
+    "techList": [
+      {
+        "num": "1",
+        "name": "Java / Spring",
+        "desc": "Verbose but rock-solid. Huge hiring pool. Runs untouched for years.",
+        "clickable": true,
+        "key": "java",
+        "tutorial": true
+      },
+      {
+        "num": "2",
+        "name": "C# / .NET",
+        "desc": "Same strengths as Java, nicer tooling, fully cross-platform now.",
+        "clickable": true,
+        "key": "csharp",
+        "tutorial": true
+      },
+      {
+        "num": "3",
+        "name": "Python / Django",
+        "desc": "Fastest to a working system. Free admin screens. Weaker on huge domains.",
+        "clickable": true,
+        "key": "python",
+        "tutorial": true
+      },
+      {
+        "num": "4",
+        "name": "Node / TypeScript",
+        "desc": "One language front to back. Fast hiring, but watch dependency churn.",
+        "clickable": true,
+        "key": "node",
+        "tutorial": true
+      },
+      {
+        "num": "5",
+        "name": "Go",
+        "desc": "Single binary, trivial to deploy. Best for infrastructure-heavy systems.",
+        "clickable": true,
+        "key": "go",
+        "tutorial": true
+      },
+      {
+        "num": "6",
+        "name": "PHP / Laravel",
+        "desc": "Cheapest hosting, huge SME footprint. Do not sneer, it ships.",
+        "clickable": true,
+        "key": "php",
+        "tutorial": true
+      }
+    ],
+    "meta": [
+      {
+        "label": "SPEAKER",
+        "value": "Manikandan"
+      },
+      {
+        "label": "DURATION",
+        "value": "7 min"
+      }
+    ],
+    "compareGroup": "backend",
+    "sketch": {
+      "title": "Request / Response Flow",
+      "svgId": "sketch-request-response"
+    },
+    "sceneId": "c5"
+  },
+  {
+    "id": "slide-6",
+    "seg": "2",
+    "expand": "choose",
+    "eyebrow": "SEGMENT 02 · HOW TO CHOOSE · 6 MIN",
+    "title": "How the Choice\nIs Really Made",
+    "techList": [
+      {
+        "num": "1",
+        "name": "Who can we hire, years from now?",
+        "desc": "The system outlives its author. Hiring pool beats elegance.",
+        "clickable": true,
+        "key": "hire",
+        "tutorial": true
+      },
+      {
+        "num": "2",
+        "name": "What does the team already know?",
+        "desc": "A second system in a familiar language beats a first in a better one.",
+        "clickable": true,
+        "key": "teamskill",
+        "tutorial": true
+      },
+      {
+        "num": "3",
+        "name": "Does the ecosystem fit the domain?",
+        "desc": "Ready-made libraries for your exact problem remove weeks of work.",
+        "clickable": true,
+        "key": "ecosystem",
+        "tutorial": true
+      },
+      {
+        "num": "4",
+        "name": "How hard is it to operate?",
+        "desc": "Fewer moving parts, fewer 9 p.m. phone calls.",
+        "clickable": true,
+        "key": "operate",
+        "tutorial": true
+      }
+    ],
+    "callout": {
+      "label": "The reason that should not decide it",
+      "body": "\"Which one is fastest?\" At real-world\n        scale, every modern option on the list is fast enough."
+    },
+    "meta": [
+      {
+        "label": "SPEAKER",
+        "value": "Manikandan"
+      },
+      {
+        "label": "DURATION",
+        "value": "6 min"
+      }
+    ],
+    "sceneId": "c6"
+  },
+  {
+    "id": "slide-7",
+    "seg": "3",
+    "expand": "database",
+    "eyebrow": "SEGMENT 03 · 20 MIN",
+    "title": "Database:\nLive Build",
+    "techList": [
+      {
+        "num": "1",
+        "name": "PostgreSQL",
+        "desc": "Relational. Open-source, built for correctness. The default choice for structured, must-be-right data.",
+        "clickable": true,
+        "key": "postgresql",
+        "tutorial": true
+      },
+      {
+        "num": "2",
+        "name": "MySQL",
+        "desc": "Relational. The most widely hosted open-source database, huge SME footprint.",
+        "clickable": true,
+        "key": "mysql",
+        "tutorial": true
+      },
+      {
+        "num": "3",
+        "name": "MS SQL Server",
+        "desc": "Relational. Microsoft's enterprise database, deep .NET integration.",
+        "clickable": true,
+        "key": "mssql",
+        "tutorial": true
+      },
+      {
+        "num": "4",
+        "name": "Oracle",
+        "desc": "Relational. The backbone of large legacy enterprises — banking, telecom, government.",
+        "clickable": true,
+        "key": "oracle",
+        "tutorial": true
+      },
+      {
+        "num": "5",
+        "name": "MongoDB",
+        "desc": "Document. Flexible JSON-like records instead of rigid tables — good when the shape of data varies.",
+        "clickable": true,
+        "key": "mongodb",
+        "tutorial": true
+      },
+      {
+        "num": "6",
+        "name": "Redis",
+        "desc": "Key-Value. Near-instant lookups by a key you know. Caching only, never your main record.",
+        "clickable": true,
+        "key": "redis",
+        "tutorial": true
+      }
+    ],
+    "callout": {
+      "label": "Three shapes, three jobs",
+      "body": "Relational (structured tables), Document (flexible JSON), Key-Value (instant lookups). Pick based on how you'll query the data, not habit."
+    },
+    "meta": [
+      {
+        "label": "SPEAKERS",
+        "value": "Mathavan / Manikandan"
+      },
+      {
+        "label": "TIME",
+        "value": "10:30 – 10:50 AM"
+      }
+    ],
+    "compareGroup": "database",
+    "sceneId": "c7"
+  },
+  {
+    "id": "slide-8",
+    "seg": "4",
+    "expand": "architecture",
+    "eyebrow": "SEGMENT 04 · 10 MIN",
+    "title": "Architecture:\nLive Walkthrough",
+    "techList": [
+      {
+        "num": "1",
+        "name": "Monolith",
+        "desc": "Everything in one program. Simple to build, but one bug can affect every store at once.",
+        "clickable": true,
+        "key": "monolith",
+        "tutorial": true
+      },
+      {
+        "num": "2",
+        "name": "Modular Monolith",
+        "desc": "Still one program, but cleanly divided inside — like labelled drawers in one cabinet.",
+        "clickable": true,
+        "key": "modular",
+        "tutorial": true
+      },
+      {
+        "num": "3",
+        "name": "Microservices",
+        "desc": "Many small, independent programs. Flexible, but harder to keep in sync with each other.",
+        "clickable": true,
+        "key": "microservices",
+        "tutorial": true
+      },
+      {
+        "num": "4",
+        "name": "Hybrid (what we build)",
+        "desc": "One central system, plus a lightweight copy in every store, so billing never fully stops.",
+        "clickable": true,
+        "key": "hybrid",
+        "tutorial": true
+      }
+    ],
+    "meta": [
+      {
+        "label": "SPEAKER",
+        "value": "Manikandan"
+      },
+      {
+        "label": "TIME",
+        "value": "10:50 – 11:00 AM"
+      }
+    ],
+    "compareGroup": "architecture",
+    "sceneId": "c8"
+  },
+  {
+    "id": "slide-9",
+    "seg": "5",
+    "expand": "testing",
+    "eyebrow": "SEGMENT 05 · 20 MIN",
+    "title": "Build & Testing:\nLive Code",
+    "techList": [
+      {
+        "num": "1",
+        "name": "Unit Test",
+        "desc": "Checks one small piece of code by itself — like \"does the tax calculator give the right number?\"",
+        "clickable": true,
+        "key": "unit",
+        "tutorial": true
+      },
+      {
+        "num": "2",
+        "name": "Integration Test",
+        "desc": "Checks that your code and the real database actually work together, not just in isolation.",
+        "clickable": true,
+        "key": "integration",
+        "tutorial": true
+      },
+      {
+        "num": "3",
+        "name": "Concurrency Test",
+        "desc": "Makes sure two people billing the same last item at the same moment can't both succeed.",
+        "clickable": true,
+        "key": "concurrency",
+        "tutorial": true
+      }
+    ],
+    "callout": {
+      "label": "Live on stage",
+      "body": "a real pull request, from branch to merge, with this exact test suite running against it."
+    },
+    "meta": [
+      {
+        "label": "SPEAKER",
+        "value": "Manikandan"
+      },
+      {
+        "label": "TIME",
+        "value": "11:05 – 11:25 AM"
+      }
+    ],
+    "sceneId": "c9"
+  },
+  {
+    "id": "slide-10",
+    "seg": "6",
+    "expand": "devops",
+    "eyebrow": "SEGMENT 06 · 20 MIN",
+    "title": "DevOps, Cloud &\nObservability",
+    "techList": [
+      {
+        "num": "1",
+        "name": "CI/CD Pipeline",
+        "desc": "An automatic checklist that tests and ships every code change, so nothing broken reaches a real store.",
+        "clickable": true,
+        "key": "cicd",
+        "tutorial": true
+      },
+      {
+        "num": "2",
+        "name": "Monitoring",
+        "desc": "A dashboard that watches whether the system is healthy — a checkup that runs every second, not once a year.",
+        "clickable": true,
+        "key": "monitoring",
+        "tutorial": true
+      },
+      {
+        "num": "3",
+        "name": "Rollback",
+        "desc": "If a release breaks something, the system can automatically bring back the last version that worked.",
+        "clickable": true,
+        "key": "rollback",
+        "tutorial": true
+      }
+    ],
+    "callout": {
+      "label": "Live on stage",
+      "body": "a real deploy, a live dashboard, and a deliberately broken release to show the rollback actually firing."
+    },
+    "meta": [
+      {
+        "label": "SPEAKERS",
+        "value": "Kalaivanan / Manikandan"
+      },
+      {
+        "label": "TIME",
+        "value": "11:25 – 11:45 AM"
+      }
+    ],
+    "sceneId": "c10"
+  },
+  {
+    "id": "slide-11",
+    "seg": "7",
+    "eyebrow": "SEGMENT 07 · 15 MIN",
+    "title": "Closing:\nCareer Guidance",
+    "techList": [
+      {
+        "num": "1",
+        "name": "What got faster",
+        "desc": "Drafting requirements, comparing tech options, writing boilerplate, generating tests.",
+        "clickable": false
+      },
+      {
+        "num": "2",
+        "name": "What did not move",
+        "desc": "Deciding what to build, owning an outage, and knowing when to say no.",
+        "clickable": false
+      },
+      {
+        "num": "3",
+        "name": "For students",
+        "desc": "Learn to read code critically, not just write it. That's the scarce skill now.",
+        "clickable": false
+      },
+      {
+        "num": "4",
+        "name": "For engineers",
+        "desc": "Your value moved to judgment: what to build, what to refuse, what to check.",
+        "clickable": false
+      }
+    ],
+    "meta": [
+      {
+        "label": "SPEAKER",
+        "value": "Mannan"
+      },
+      {
+        "label": "TIME",
+        "value": "11:45 AM – 12:00 PM"
+      }
+    ],
+    "sceneId": "c11"
+  },
+  {
+    "id": "slide-12",
+    "seg": "8",
+    "eyebrow": "SEGMENT 08 · 10 MIN",
+    "title": "Live Question\n& Answer",
+    "techList": [
+      {
+        "num": "1",
+        "name": "Submit via Pigeonhole",
+        "desc": "Anonymous is completely fine — ask whatever you actually want to know.",
+        "clickable": false
+      },
+      {
+        "num": "2",
+        "name": "Bring your own project",
+        "desc": "Share a decision or a project idea — we'll look at it live if time allows.",
+        "clickable": false
+      },
+      {
+        "num": "3",
+        "name": "Any panelist can answer",
+        "desc": "We'll route your question to whoever's expertise actually fits it.",
+        "clickable": false
+      }
+    ],
+    "meta": [
+      {
+        "label": "PANEL",
+        "value": "All Speakers"
+      },
+      {
+        "label": "TIME",
+        "value": "12:00 – 12:10 PM"
+      }
+    ],
+    "sceneId": "c12"
+  }
+]

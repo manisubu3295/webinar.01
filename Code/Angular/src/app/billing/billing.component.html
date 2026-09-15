@@ -1,0 +1,138 @@
+<div class="billing-screen">
+  <header class="billing-screen__header">
+    <h1>AAMEC Billing — Counter</h1>
+    <p class="hint">Angular · HttpClient · calling the Node.js backend</p>
+  </header>
+
+  <div class="alert alert--error" *ngIf="error">{{ error }}</div>
+
+  <div class="billing-screen__grid">
+    <section class="panel">
+      <h2>Product Lookup</h2>
+      <form class="lookup-form" (ngSubmit)="lookup()">
+        <input
+          type="text"
+          placeholder="Product code (e.g. P001)"
+          [(ngModel)]="code"
+          name="code"
+          autofocus
+        />
+        <button type="submit" [disabled]="lookingUp">
+          {{ lookingUp ? 'Looking up…' : 'Look up' }}
+        </button>
+      </form>
+      <p class="alert alert--error" *ngIf="lookupError">{{ lookupError }}</p>
+      <div class="lookup-result" *ngIf="lookupResult as p">
+        <div>
+          <strong>{{ p.name }}</strong>
+          <p class="hint">₹{{ p.price.toFixed(2) }} · {{ (p.taxRate * 100).toFixed(0) }}% GST</p>
+        </div>
+        <input type="number" min="1" [(ngModel)]="quantity" name="quantity" class="qty-input" />
+        <button type="button" (click)="addToCart()">Add to cart</button>
+      </div>
+
+      <app-customer-search
+        [customerId]="customerId"
+        (customerIdChange)="customerId = $event"
+      ></app-customer-search>
+    </section>
+
+    <section class="panel">
+      <h2>Cart</h2>
+      <p class="hint" *ngIf="cart.length === 0">Cart is empty. Look up a product to add it.</p>
+      <ng-container *ngIf="cart.length > 0">
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Qty</th><th>Unit</th><th>Line Total</th><th></th></tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of cart">
+              <td>{{ item.name }} <span class="hint">({{ item.productCode }})</span></td>
+              <td>{{ item.quantity }}</td>
+              <td>₹{{ item.unitPrice.toFixed(2) }}</td>
+              <td>₹{{ (item.unitPrice * item.quantity).toFixed(2) }}</td>
+              <td>
+                <button type="button" class="link-button" (click)="removeFromCart(item.productCode)">
+                  Remove
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="cart-subtotal">Cart subtotal (before tax): ₹{{ cartSubtotal.toFixed(2) }}</p>
+        <button type="button" class="primary" [disabled]="creating" (click)="createBill()">
+          {{ creating ? 'Creating Bill…' : 'Create Bill' }}
+        </button>
+      </ng-container>
+    </section>
+  </div>
+
+  <section class="panel" *ngIf="invoice as inv">
+    <div class="bill-card" [class.bill-card--cancelled]="inv.status === 'CANCELLED'">
+      <div class="bill-card__header">
+        <h2>Bill {{ inv.billNumber }}</h2>
+        <span class="status-badge" [ngClass]="'status-badge--' + inv.status.toLowerCase()">
+          {{ inv.status }}
+        </span>
+      </div>
+
+      <table>
+        <thead>
+          <tr><th>Code</th><th>Qty</th><th>Unit Price</th><th>Line Total</th></tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of inv.items">
+            <td>{{ item.productCode }}</td>
+            <td>{{ item.quantity }}</td>
+            <td>₹{{ item.unitPrice.toFixed(2) }}</td>
+            <td>₹{{ item.lineTotal.toFixed(2) }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="bill-card__totals">
+        <div><span>Subtotal</span><span>₹{{ inv.subtotal.toFixed(2) }}</span></div>
+        <div><span>Tax</span><span>₹{{ inv.tax.toFixed(2) }}</span></div>
+        <div class="bill-card__grand-total"><span>Total</span><span>₹{{ inv.total.toFixed(2) }}</span></div>
+      </div>
+
+      <div class="bill-card__actions">
+        <button type="button" (click)="printBill()">Print</button>
+        <a class="button-like" [href]="mailtoHref(inv)">Email</a>
+        <button
+          type="button"
+          class="danger"
+          [disabled]="inv.status === 'CANCELLED' || cancelling"
+          (click)="cancelBill()"
+        >
+          {{ inv.status === 'CANCELLED' ? 'Cancelled' : cancelling ? 'Cancelling…' : 'Cancel Bill' }}
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="invoice-list">
+      <h3>Today's Bills</h3>
+      <p class="hint" *ngIf="loadingInvoices">Loading…</p>
+      <p class="hint" *ngIf="!loadingInvoices && invoices.length === 0">No bills yet.</p>
+      <table *ngIf="invoices.length > 0">
+        <thead>
+          <tr><th>Bill #</th><th>Total</th><th>Status</th><th></th></tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let inv of invoices">
+            <td>{{ inv.billNumber }}</td>
+            <td>₹{{ inv.total.toFixed(2) }}</td>
+            <td>
+              <span class="status-badge" [ngClass]="'status-badge--' + inv.status.toLowerCase()">
+                {{ inv.status }}
+              </span>
+            </td>
+            <td><button type="button" (click)="selectInvoice(inv.id)">View</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,30 @@
+{
+  "brandLine": "AADHIRAI INNOVATIONS",
+  "brandSub": "PERAVURANI  ·  CHENNAI  ·  SINGAPORE",
+  "heroTitle": "AAMEC",
+  "heroSub": "SESSION 01  |  LIVE TECHNICAL WEBINAR",
+  "heroTag": "Live code. Live infrastructure. Live decisions.",
+  "desc": "A fully live, hands-on build-through of a real enterprise application, from requirement gathering\n        to production operations. 18 September 2026, 9:50 AM to 12:10 PM IST.",
+  "panel": [
+    {
+      "initials": "MK",
+      "name": "Manikandan",
+      "role": "Session Lead"
+    },
+    {
+      "initials": "MT",
+      "name": "Mathavan",
+      "role": "Data Architect"
+    },
+    {
+      "initials": "KV",
+      "name": "Kalaivanan",
+      "role": "Infra & DevOps Lead"
+    },
+    {
+      "initials": "MN",
+      "name": "Mannan",
+      "role": "Product Owner"
+    }
+  ]
+}

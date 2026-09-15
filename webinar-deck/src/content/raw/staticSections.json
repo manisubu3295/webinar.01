@@ -1,0 +1,178 @@
+[
+  {
+    "attrs": {
+      "class": "slide active",
+      "id": "slide-0",
+      "data-seg": "0"
+    },
+    "inner": "<div class=\"text-pane\">\n      <div class=\"brand-line\">AADHIRAI INNOVATIONS</div>\n      <div class=\"brand-sub\">PERAVURANI &nbsp;&middot;&nbsp; CHENNAI &nbsp;&middot;&nbsp; SINGAPORE</div>\n      <div class=\"hero-title\">AAMEC</div>\n      <div class=\"hero-sub\">SESSION 01 &nbsp;|&nbsp; LIVE TECHNICAL WEBINAR</div>\n      <div class=\"hero-tag\">Live code. Live infrastructure. Live decisions.</div>\n      <div class=\"slide-desc\" style=\"max-width:56ch;\">\n        A fully live, hands-on build-through of a real enterprise application, from requirement gathering\n        to production operations. 18 September 2026, 9:50 AM to 12:10 PM IST.\n      </div>\n      <div class=\"panel-strip\">\n        <div class=\"panel-chip\"><div class=\"chip-circle\">MK</div><div><div class=\"chip-name\">Manikandan</div><div class=\"chip-role\">Session Lead</div></div></div>\n        <div class=\"panel-chip\"><div class=\"chip-circle\">MT</div><div><div class=\"chip-name\">Mathavan</div><div class=\"chip-role\">Data Architect</div></div></div>\n        <div class=\"panel-chip\"><div class=\"chip-circle\">KV</div><div><div class=\"chip-name\">Kalaivanan</div><div class=\"chip-role\">Infra &amp; DevOps Lead</div></div></div>\n        <div class=\"panel-chip\"><div class=\"chip-circle\">MN</div><div><div class=\"chip-name\">Mannan</div><div class=\"chip-role\">Product Owner</div></div></div>\n      </div>\n    </div>"
+  },
+  {
+    "attrs": {
+      "class": "slide",
+      "id": "slide-1",
+      "data-seg": "0"
+    },
+    "inner": "<div class=\"text-pane\">\n      <div class=\"eyebrow\">TODAY'S RUN OF SHOW</div>\n      <h1 class=\"slide-title\" style=\"font-size:clamp(28px,3.6vw,44px);\">What We're<br/>Covering</h1>\n      <div class=\"tech-list\">\n        <div class=\"tech-item\">\n          <div class=\"tech-num\">1</div>\n          <div><div class=\"tech-name\">Requirement Gathering</div><div class=\"tech-desc\">9:50 &ndash; 10:10 AM &middot; 20 min</div></div>\n        </div>\n        <div class=\"tech-item\">\n          <div class=\"tech-num\">2</div>\n          <div><div class=\"tech-name\">Technology Selection</div><div class=\"tech-desc\">10:10 &ndash; 10:30 AM &middot; 20 min &middot; Frontend, Backend, How to Choose</div></div>\n        </div>\n        <div class=\"tech-item\">\n          <div class=\"tech-num\">3</div>\n          <div><div class=\"tech-name\">Database</div><div class=\"tech-desc\">10:30 &ndash; 10:50 AM &middot; 20 min</div></div>\n        </div>\n        <div class=\"tech-item\">\n          <div class=\"tech-num\">4</div>\n          <div><div class=\"tech-name\">Architecture</div><div class=\"tech-desc\">10:50 &ndash; 11:00 AM &middot; 10 min</div></div>\n        </div>\n        <div class=\"tech-item\">\n          <div class=\"tech-num\">5</div>\n          <div><div class=\"tech-name\">Build &amp; Testing</div><div class=\"tech-desc\">11:05 &ndash; 11:25 AM &middot; 20 min &middot; (5 min break beforehand)</div></div>\n        </div>\n        <div class=\"tech-item\">\n          <div class=\"tech-num\">6</div>\n          <div><div class=\"tech-name\">DevOps, Cloud &amp; Observability</div><div class=\"tech-desc\">11:25 &ndash; 11:45 AM &middot; 20 min</div></div>\n        </div>\n        <div class=\"tech-item\">\n          <div class=\"tech-num\">7</div>\n          <div><div class=\"tech-name\">Closing: Career Guidance</div><div class=\"tech-desc\">11:45 AM &ndash; 12:00 PM &middot; 15 min</div></div>\n        </div>\n        <div class=\"tech-item\">\n          <div class=\"tech-num\">8</div>\n          <div><div class=\"tech-name\">Live Question &amp; Answer</div><div class=\"tech-desc\">12:00 &ndash; 12:10 PM &middot; 10 min</div></div>\n        </div>\n      </div>\n    </div>\n    <div class=\"canvas-pane\" data-scene-id=\"c1\"></div>"
+  },
+  {
+    "attrs": {
+      "class": "slide module-divider",
+      "id": "divider-1",
+      "data-seg": "1"
+    },
+    "inner": "<div class=\"text-pane\">\n      <div class=\"sheet-stamp\"><span class=\"stamp-num\">01</span><span class=\"stamp-of\">of 8 modules</span></div>\n      <h1 class=\"divider-title\">Requirement Gathering</h1>\n      <p class=\"divider-desc\">How industry teams find out what a client actually needs, not just what they say.</p>\n      <div class=\"divider-contents\"><div class=\"divider-content-item\">Introduction</div><div class=\"divider-content-item\">Interview</div><div class=\"divider-content-item\">Observation</div><div class=\"divider-content-item\">Document Study</div><div class=\"divider-content-item\">Prototype</div><div class=\"divider-content-item\">Workshop</div></div>\n    </div>"
+  },
+  {
+    "attrs": {
+      "class": "slide",
+      "id": "slide-2",
+      "data-seg": "1"
+    },
+    "inner": "<div class=\"text-pane\">\n      <div class=\"eyebrow\">SEGMENT 01 &middot; 20 MIN</div>\n      <h1 class=\"slide-title\">Introduction &amp;<br/>Requirement Gathering</h1>\n      <div class=\"tech-list\">\n        <div class=\"tech-item\">\n          <div class=\"tech-num\">1</div>\n          <div><div class=\"tech-name\">Fully live</div><div class=\"tech-desc\">Every screen you'll see is a real, running system &mdash; not slides pretending to be a demo.</div></div>\n        </div>\n        <div class=\"tech-item\">\n          <div class=\"tech-num\">2</div>\n          <div><div class=\"tech-name\">One requirement, start to finish</div><div class=\"tech-desc\">The same billing system moves through every segment today &mdash; gather, choose, build, deploy, run.</div></div>\n        </div>\n        <div class=\"tech-item\">\n          <div class=\"tech-num\">3</div>\n          <div><div class=\"tech-name\">Ask anytime</div><div class=\"tech-desc\">Questions go through Pigeonhole throughout &mdash; you don't have to wait for the Q&amp;A slot.</div></div>\n        </div>\n        <div class=\"tech-item\">\n          <div class=\"tech-num\">4</div>\n          <div><div class=\"tech-name\">Four angles, one panel</div><div class=\"tech-desc\">Enterprise banking infrastructure, data architecture, product management, and hands-on engineering.</div></div>\n        </div>\n      </div>\n      <div class=\"meta-row\" style=\"margin-top:16px;\">\n        <div class=\"meta-item\"><div class=\"meta-label\">SPEAKER</div><div class=\"meta-value\">Manikandan</div></div>\n        <div class=\"meta-item\"><div class=\"meta-label\">TIME</div><div class=\"meta-value\">9:50 &ndash; 10:10 AM</div></div>\n      </div>\n    </div>\n    <div class=\"canvas-pane\" data-scene-id=\"c2\"></div>"
+  },
+  {
+    "attrs": {
+      "class": "slide",
+      "id": "slide-3",
+      "data-seg": "1",
+      "data-expand": "gather"
+    },
+    "inner": "<div class=\"text-pane\">\n      <div class=\"eyebrow\">SEGMENT 01 &middot; REQUIREMENT GATHERING &middot; 5 MIN</div>\n      <h1 class=\"slide-title\" style=\"font-size:clamp(28px,3.6vw,44px);\">Five Ways<br/>to Gather</h1>\n      <div class=\"tech-list\">\n        <div class=\"tech-item tech-clickable\" data-tech=\"interview\">\n          <div class=\"tech-num\">1</div>\n          <div><div class=\"tech-name\">Interview <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Prepared questions, one person at a time, written down.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"observation\">\n          <div class=\"tech-num\">2</div>\n          <div><div class=\"tech-name\">Observation <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Sit and watch the real work happen. Say nothing.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"docstudy\">\n          <div class=\"tech-num\">3</div>\n          <div><div class=\"tech-name\">Document Study <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Collect every bill, register, form, and spreadsheet in use today.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"prototype\">\n          <div class=\"tech-num\">4</div>\n          <div><div class=\"tech-name\">Prototype <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">A clickable mock-up shown before any real code.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"workshop\">\n          <div class=\"tech-num\">5</div>\n          <div><div class=\"tech-name\">Workshop <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Get the disagreeing departments in one room, facilitated.</div></div>\n        </div>\n      </div>\n      <div class=\"meta-row\" style=\"margin-top:20px;\">\n        <div class=\"meta-item\"><div class=\"meta-label\">SPEAKER</div><div class=\"meta-value\">Manikandan</div></div>\n        <div class=\"meta-item\"><div class=\"meta-label\">DURATION</div><div class=\"meta-value\">5 min</div></div>\n      </div>\n    </div>\n    <div class=\"canvas-pane\" data-scene-id=\"c3\"></div>"
+  },
+  {
+    "attrs": {
+      "class": "slide module-divider",
+      "id": "divider-2",
+      "data-seg": "2"
+    },
+    "inner": "<div class=\"text-pane\">\n      <div class=\"sheet-stamp\"><span class=\"stamp-num\">02</span><span class=\"stamp-of\">of 8 modules</span></div>\n      <h1 class=\"divider-title\">Technology Selection</h1>\n      <p class=\"divider-desc\">Choosing the right frontend framework and backend language, and how the choice is really made.</p>\n      <div class=\"divider-contents\"><div class=\"divider-content-item\">Frontend Technology</div><div class=\"divider-content-item\">Backend Technology</div><div class=\"divider-content-item\">How to Choose</div></div>\n    </div>"
+  },
+  {
+    "attrs": {
+      "class": "slide",
+      "id": "slide-4",
+      "data-seg": "2",
+      "data-expand": "frontend"
+    },
+    "inner": "<div class=\"text-pane\">\n      <div class=\"eyebrow\">SEGMENT 02 &middot; FRONTEND TECHNOLOGY &middot; 7 MIN</div>\n      <h1 class=\"slide-title\" style=\"font-size:clamp(28px,3.6vw,44px);\">Frontend<br/>Technology</h1>\n      <div class=\"tech-list\">\n        <div class=\"tech-item tech-clickable\" data-tech=\"react\">\n          <div class=\"tech-num\">1</div>\n          <div><div class=\"tech-name\">React <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Massive ecosystem and hiring pool. The default choice for most product teams.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"angular\">\n          <div class=\"tech-num\">2</div>\n          <div><div class=\"tech-name\">Angular <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Batteries-included, TypeScript-first. Best for large enterprise teams needing structure.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"vue\">\n          <div class=\"tech-num\">3</div>\n          <div><div class=\"tech-name\">Vue <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Gentle learning curve, flexible. Great for small-to-mid teams shipping fast.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"svelte\">\n          <div class=\"tech-num\">4</div>\n          <div><div class=\"tech-name\">Svelte <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Compiles away at build time, smallest bundles. Best when performance is the top priority.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"nextjs\">\n          <div class=\"tech-num\">5</div>\n          <div><div class=\"tech-name\">Next.js <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">React plus routing, SSR, and static generation built in. Best for SEO-heavy or full-stack apps.</div></div>\n        </div>\n      </div>\n      <div class=\"meta-row\" style=\"margin-top:16px;\">\n        <div class=\"meta-item\"><div class=\"meta-label\">SPEAKER</div><div class=\"meta-value\">Manikandan</div></div>\n        <div class=\"meta-item\"><div class=\"meta-label\">DURATION</div><div class=\"meta-value\">7 min</div></div>\n      </div>\n      <div class=\"back-link compare-link\" data-compare-group=\"frontend\" style=\"margin-top:14px;\">See full comparison table &rarr;</div>\n    </div>\n    <div class=\"canvas-pane\" data-scene-id=\"c4\"></div>"
+  },
+  {
+    "attrs": {
+      "class": "slide",
+      "id": "slide-5",
+      "data-seg": "2",
+      "data-expand": "backend"
+    },
+    "inner": "<div class=\"text-pane\">\n      <div class=\"eyebrow\">SEGMENT 02 &middot; BACKEND TECHNOLOGY &middot; 7 MIN</div>\n      <h1 class=\"slide-title\" style=\"font-size:clamp(28px,3.6vw,44px);\">Backend<br/>Technology</h1>\n      <div class=\"tech-list\">\n        <div class=\"tech-item tech-clickable\" data-tech=\"java\">\n          <div class=\"tech-num\">1</div>\n          <div><div class=\"tech-name\">Java / Spring <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Verbose but rock-solid. Huge hiring pool. Runs untouched for years.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"csharp\">\n          <div class=\"tech-num\">2</div>\n          <div><div class=\"tech-name\">C# / .NET <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Same strengths as Java, nicer tooling, fully cross-platform now.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"python\">\n          <div class=\"tech-num\">3</div>\n          <div><div class=\"tech-name\">Python / Django <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Fastest to a working system. Free admin screens. Weaker on huge domains.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"node\">\n          <div class=\"tech-num\">4</div>\n          <div><div class=\"tech-name\">Node / TypeScript <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">One language front to back. Fast hiring, but watch dependency churn.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"go\">\n          <div class=\"tech-num\">5</div>\n          <div><div class=\"tech-name\">Go <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Single binary, trivial to deploy. Best for infrastructure-heavy systems.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"php\">\n          <div class=\"tech-num\">6</div>\n          <div><div class=\"tech-name\">PHP / Laravel <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Cheapest hosting, huge SME footprint. Do not sneer, it ships.</div></div>\n        </div>\n      </div>\n      <div class=\"meta-row\" style=\"margin-top:14px;\">\n        <div class=\"meta-item\"><div class=\"meta-label\">SPEAKER</div><div class=\"meta-value\">Manikandan</div></div>\n        <div class=\"meta-item\"><div class=\"meta-label\">DURATION</div><div class=\"meta-value\">7 min</div></div>\n      </div>\n      <div class=\"back-link compare-link\" data-compare-group=\"backend\" style=\"margin-top:14px;\">See full comparison table &rarr;</div>\n      <h3 style=\"margin-top:16px;\">Request / Response Flow</h3>\n      <svg id=\"sketch-request-response\" width=\"100%\" height=\"130\" viewBox=\"0 0 460 130\" style=\"max-width:460px;\"></svg>\n    </div>\n    <div class=\"canvas-pane\" data-scene-id=\"c5\"></div>"
+  },
+  {
+    "attrs": {
+      "class": "slide",
+      "id": "slide-6",
+      "data-seg": "2",
+      "data-expand": "choose"
+    },
+    "inner": "<div class=\"text-pane\">\n      <div class=\"eyebrow\">SEGMENT 02 &middot; HOW TO CHOOSE &middot; 6 MIN</div>\n      <h1 class=\"slide-title\" style=\"font-size:clamp(26px,3.4vw,40px);\">How the Choice<br/>Is Really Made</h1>\n      <div class=\"tech-list\">\n        <div class=\"tech-item tech-clickable\" data-tech=\"hire\">\n          <div class=\"tech-num\">1</div>\n          <div><div class=\"tech-name\">Who can we hire, years from now? <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">The system outlives its author. Hiring pool beats elegance.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"teamskill\">\n          <div class=\"tech-num\">2</div>\n          <div><div class=\"tech-name\">What does the team already know? <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">A second system in a familiar language beats a first in a better one.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"ecosystem\">\n          <div class=\"tech-num\">3</div>\n          <div><div class=\"tech-name\">Does the ecosystem fit the domain? <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Ready-made libraries for your exact problem remove weeks of work.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"operate\">\n          <div class=\"tech-num\">4</div>\n          <div><div class=\"tech-name\">How hard is it to operate? <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Fewer moving parts, fewer 9 p.m. phone calls.</div></div>\n        </div>\n      </div>\n      <div class=\"callout\">\n        <strong>The reason that should not decide it:</strong> \"Which one is fastest?\" At real-world\n        scale, every modern option on the list is fast enough.\n      </div>\n      <div class=\"meta-row\" style=\"margin-top:14px;\">\n        <div class=\"meta-item\"><div class=\"meta-label\">SPEAKER</div><div class=\"meta-value\">Manikandan</div></div>\n        <div class=\"meta-item\"><div class=\"meta-label\">DURATION</div><div class=\"meta-value\">6 min</div></div>\n      </div>\n    </div>\n    <div class=\"canvas-pane\" data-scene-id=\"c6\"></div>"
+  },
+  {
+    "attrs": {
+      "class": "slide module-divider",
+      "id": "divider-3",
+      "data-seg": "3"
+    },
+    "inner": "<div class=\"text-pane\">\n      <div class=\"sheet-stamp\"><span class=\"stamp-num\">03</span><span class=\"stamp-of\">of 8 modules</span></div>\n      <h1 class=\"divider-title\">Database</h1>\n      <p class=\"divider-desc\">Relational, document, and key-value databases, and when to reach for each one.</p>\n      <div class=\"divider-contents\"><div class=\"divider-content-item\">Relational Databases</div><div class=\"divider-content-item\">NoSQL & Distributed Databases</div></div>\n    </div>"
+  },
+  {
+    "attrs": {
+      "class": "slide",
+      "id": "slide-7",
+      "data-seg": "3",
+      "data-expand": "database"
+    },
+    "inner": "<div class=\"text-pane\">\n      <div class=\"eyebrow\">SEGMENT 03 &middot; 20 MIN</div>\n      <h1 class=\"slide-title\" style=\"font-size:clamp(28px,3.6vw,44px);\">Database:<br/>Live Build</h1>\n      <div class=\"tech-list\">\n        <div class=\"tech-item tech-clickable\" data-tech=\"postgresql\">\n          <div class=\"tech-num\">1</div>\n          <div><div class=\"tech-name\">PostgreSQL <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Relational. Open-source, built for correctness. The default choice for structured, must-be-right data.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"mysql\">\n          <div class=\"tech-num\">2</div>\n          <div><div class=\"tech-name\">MySQL <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Relational. The most widely hosted open-source database, huge SME footprint.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"mssql\">\n          <div class=\"tech-num\">3</div>\n          <div><div class=\"tech-name\">MS SQL Server <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Relational. Microsoft's enterprise database, deep .NET integration.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"oracle\">\n          <div class=\"tech-num\">4</div>\n          <div><div class=\"tech-name\">Oracle <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Relational. The backbone of large legacy enterprises &mdash; banking, telecom, government.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"mongodb\">\n          <div class=\"tech-num\">5</div>\n          <div><div class=\"tech-name\">MongoDB <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Document. Flexible JSON-like records instead of rigid tables &mdash; good when the shape of data varies.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"redis\">\n          <div class=\"tech-num\">6</div>\n          <div><div class=\"tech-name\">Redis <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Key-Value. Near-instant lookups by a key you know. Caching only, never your main record.</div></div>\n        </div>\n      </div>\n      <div class=\"callout\"><strong>Three shapes, three jobs:</strong> Relational (structured tables), Document (flexible JSON), Key-Value (instant lookups). Pick based on how you'll query the data, not habit.</div>\n      <div class=\"meta-row\" style=\"margin-top:14px;\">\n        <div class=\"meta-item\"><div class=\"meta-label\">SPEAKERS</div><div class=\"meta-value\">Mathavan / Manikandan</div></div>\n        <div class=\"meta-item\"><div class=\"meta-label\">TIME</div><div class=\"meta-value\">10:30 &ndash; 10:50 AM</div></div>\n      </div>\n      <div class=\"back-link compare-link\" data-compare-group=\"database\" style=\"margin-top:14px;\">See full comparison table &rarr;</div>\n    </div>\n    <div class=\"canvas-pane\" data-scene-id=\"c7\"></div>"
+  },
+  {
+    "attrs": {
+      "class": "slide module-divider",
+      "id": "divider-4",
+      "data-seg": "4"
+    },
+    "inner": "<div class=\"text-pane\">\n      <div class=\"sheet-stamp\"><span class=\"stamp-num\">04</span><span class=\"stamp-of\">of 8 modules</span></div>\n      <h1 class=\"divider-title\">Architecture</h1>\n      <p class=\"divider-desc\">The four shapes a system can take, and the trade-offs behind each one.</p>\n      <div class=\"divider-contents\"><div class=\"divider-content-item\">Monolith</div><div class=\"divider-content-item\">Modular Monolith</div><div class=\"divider-content-item\">Microservices</div><div class=\"divider-content-item\">Hybrid</div></div>\n    </div>"
+  },
+  {
+    "attrs": {
+      "class": "slide",
+      "id": "slide-8",
+      "data-seg": "4",
+      "data-expand": "architecture"
+    },
+    "inner": "<div class=\"text-pane\">\n      <div class=\"eyebrow\">SEGMENT 04 &middot; 10 MIN</div>\n      <h1 class=\"slide-title\" style=\"font-size:clamp(28px,3.6vw,44px);\">Architecture:<br/>Live Walkthrough</h1>\n      <div class=\"tech-list\">\n        <div class=\"tech-item tech-clickable\" data-tech=\"monolith\">\n          <div class=\"tech-num\">1</div>\n          <div><div class=\"tech-name\">Monolith <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Everything in one program. Simple to build, but one bug can affect every store at once.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"modular\">\n          <div class=\"tech-num\">2</div>\n          <div><div class=\"tech-name\">Modular Monolith <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Still one program, but cleanly divided inside — like labelled drawers in one cabinet.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"microservices\">\n          <div class=\"tech-num\">3</div>\n          <div><div class=\"tech-name\">Microservices <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Many small, independent programs. Flexible, but harder to keep in sync with each other.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"hybrid\">\n          <div class=\"tech-num\">4</div>\n          <div><div class=\"tech-name\">Hybrid (what we build) <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">One central system, plus a lightweight copy in every store, so billing never fully stops.</div></div>\n        </div>\n      </div>\n      <div class=\"meta-row\" style=\"margin-top:14px;\">\n        <div class=\"meta-item\"><div class=\"meta-label\">SPEAKER</div><div class=\"meta-value\">Manikandan</div></div>\n        <div class=\"meta-item\"><div class=\"meta-label\">TIME</div><div class=\"meta-value\">10:50 &ndash; 11:00 AM</div></div>\n      </div>\n      <div class=\"back-link compare-link\" data-compare-group=\"architecture\" style=\"margin-top:14px;\">See full comparison table &rarr;</div>\n    </div>\n    <div class=\"canvas-pane\" data-scene-id=\"c8\"></div>"
+  },
+  {
+    "attrs": {
+      "class": "slide module-divider",
+      "id": "divider-5",
+      "data-seg": "5"
+    },
+    "inner": "<div class=\"text-pane\">\n      <div class=\"sheet-stamp\"><span class=\"stamp-num\">05</span><span class=\"stamp-of\">of 8 modules</span></div>\n      <h1 class=\"divider-title\">Build &amp; Testing</h1>\n      <p class=\"divider-desc\">What actually happens from a pull request to a merged, tested change.</p>\n      <div class=\"divider-contents\"><div class=\"divider-content-item\">Unit Test</div><div class=\"divider-content-item\">Integration Test</div><div class=\"divider-content-item\">Concurrency Test</div></div>\n    </div>"
+  },
+  {
+    "attrs": {
+      "class": "slide",
+      "id": "slide-9",
+      "data-seg": "5",
+      "data-expand": "testing"
+    },
+    "inner": "<div class=\"text-pane\">\n      <div class=\"eyebrow\">SEGMENT 05 &middot; 20 MIN</div>\n      <h1 class=\"slide-title\" style=\"font-size:clamp(28px,3.6vw,44px);\">Build &amp; Testing:<br/>Live Code</h1>\n      <div class=\"tech-list\">\n        <div class=\"tech-item tech-clickable\" data-tech=\"unit\">\n          <div class=\"tech-num\">1</div>\n          <div><div class=\"tech-name\">Unit Test <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Checks one small piece of code by itself — like \"does the tax calculator give the right number?\"</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"integration\">\n          <div class=\"tech-num\">2</div>\n          <div><div class=\"tech-name\">Integration Test <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Checks that your code and the real database actually work together, not just in isolation.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"concurrency\">\n          <div class=\"tech-num\">3</div>\n          <div><div class=\"tech-name\">Concurrency Test <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">Makes sure two people billing the same last item at the same moment can't both succeed.</div></div>\n        </div>\n      </div>\n      <div class=\"callout\"><strong>Live on stage:</strong> a real pull request, from branch to merge, with this exact test suite running against it.</div>\n      <div class=\"meta-row\" style=\"margin-top:14px;\">\n        <div class=\"meta-item\"><div class=\"meta-label\">SPEAKER</div><div class=\"meta-value\">Manikandan</div></div>\n        <div class=\"meta-item\"><div class=\"meta-label\">TIME</div><div class=\"meta-value\">11:05 &ndash; 11:25 AM</div></div>\n      </div>\n    </div>\n    <div class=\"canvas-pane\" data-scene-id=\"c9\"></div>"
+  },
+  {
+    "attrs": {
+      "class": "slide module-divider",
+      "id": "divider-6",
+      "data-seg": "6"
+    },
+    "inner": "<div class=\"text-pane\">\n      <div class=\"sheet-stamp\"><span class=\"stamp-num\">06</span><span class=\"stamp-of\">of 8 modules</span></div>\n      <h1 class=\"divider-title\">DevOps &amp; Infrastructure</h1>\n      <p class=\"divider-desc\">Shipping code safely, watching it in production, and the cloud building blocks underneath it all.</p>\n      <div class=\"divider-contents\"><div class=\"divider-content-item\">CI/CD Pipeline</div><div class=\"divider-content-item\">Monitoring</div><div class=\"divider-content-item\">Rollback</div><div class=\"divider-content-item\">Operating System</div><div class=\"divider-content-item\">Cloud Providers</div><div class=\"divider-content-item\">Container &amp; Orchestration</div><div class=\"divider-content-item\">Application Servers</div></div>\n    </div>"
+  },
+  {
+    "attrs": {
+      "class": "slide",
+      "id": "slide-10",
+      "data-seg": "6",
+      "data-expand": "devops"
+    },
+    "inner": "<div class=\"text-pane\">\n      <div class=\"eyebrow\">SEGMENT 06 &middot; 20 MIN</div>\n      <h1 class=\"slide-title\" style=\"font-size:clamp(28px,3.6vw,44px);\">DevOps, Cloud &amp;<br/>Observability</h1>\n      <div class=\"tech-list\">\n        <div class=\"tech-item tech-clickable\" data-tech=\"cicd\">\n          <div class=\"tech-num\">1</div>\n          <div><div class=\"tech-name\">CI/CD Pipeline <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">An automatic checklist that tests and ships every code change, so nothing broken reaches a real store.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"monitoring\">\n          <div class=\"tech-num\">2</div>\n          <div><div class=\"tech-name\">Monitoring <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">A dashboard that watches whether the system is healthy — a checkup that runs every second, not once a year.</div></div>\n        </div>\n        <div class=\"tech-item tech-clickable\" data-tech=\"rollback\">\n          <div class=\"tech-num\">3</div>\n          <div><div class=\"tech-name\">Rollback <span class=\"tech-hint\">tutorial</span></div><div class=\"tech-desc\">If a release breaks something, the system can automatically bring back the last version that worked.</div></div>\n        </div>\n      </div>\n      <div class=\"callout\"><strong>Live on stage:</strong> a real deploy, a live dashboard, and a deliberately broken release to show the rollback actually firing.</div>\n      <div class=\"meta-row\" style=\"margin-top:14px;\">\n        <div class=\"meta-item\"><div class=\"meta-label\">SPEAKERS</div><div class=\"meta-value\">Kalaivanan / Manikandan</div></div>\n        <div class=\"meta-item\"><div class=\"meta-label\">TIME</div><div class=\"meta-value\">11:25 &ndash; 11:45 AM</div></div>\n      </div>\n    </div>\n    <div class=\"canvas-pane\" data-scene-id=\"c10\"></div>"
+  },
+  {
+    "attrs": {
+      "class": "slide module-divider",
+      "id": "divider-7",
+      "data-seg": "7"
+    },
+    "inner": "<div class=\"text-pane\">\n      <div class=\"sheet-stamp\"><span class=\"stamp-num\">07</span><span class=\"stamp-of\">of 8 modules</span></div>\n      <h1 class=\"divider-title\">Closing</h1>\n      <p class=\"divider-desc\">What actually changed with AI in the engineering workflow, and what still comes down to judgment.</p>\n      <div class=\"divider-contents\"><div class=\"divider-content-item\">Career Guidance</div></div>\n    </div>"
+  },
+  {
+    "attrs": {
+      "class": "slide",
+      "id": "slide-11",
+      "data-seg": "7"
+    },
+    "inner": "<div class=\"text-pane\">\n      <div class=\"eyebrow\">SEGMENT 07 &middot; 15 MIN</div>\n      <h1 class=\"slide-title\" style=\"font-size:clamp(28px,3.6vw,44px);\">Closing:<br/>Career Guidance</h1>\n      <div class=\"tech-list\">\n        <div class=\"tech-item\">\n          <div class=\"tech-num\">1</div>\n          <div><div class=\"tech-name\">What got faster</div><div class=\"tech-desc\">Drafting requirements, comparing tech options, writing boilerplate, generating tests.</div></div>\n        </div>\n        <div class=\"tech-item\">\n          <div class=\"tech-num\">2</div>\n          <div><div class=\"tech-name\">What did not move</div><div class=\"tech-desc\">Deciding what to build, owning an outage, and knowing when to say no.</div></div>\n        </div>\n        <div class=\"tech-item\">\n          <div class=\"tech-num\">3</div>\n          <div><div class=\"tech-name\">For students</div><div class=\"tech-desc\">Learn to read code critically, not just write it. That's the scarce skill now.</div></div>\n        </div>\n        <div class=\"tech-item\">\n          <div class=\"tech-num\">4</div>\n          <div><div class=\"tech-name\">For engineers</div><div class=\"tech-desc\">Your value moved to judgment: what to build, what to refuse, what to check.</div></div>\n        </div>\n      </div>\n      <div class=\"meta-row\" style=\"margin-top:14px;\">\n        <div class=\"meta-item\"><div class=\"meta-label\">SPEAKER</div><div class=\"meta-value\">Mannan</div></div>\n        <div class=\"meta-item\"><div class=\"meta-label\">TIME</div><div class=\"meta-value\">11:45 AM &ndash; 12:00 PM</div></div>\n      </div>\n    </div>\n    <div class=\"canvas-pane\" data-scene-id=\"c11\"></div>"
+  },
+  {
+    "attrs": {
+      "class": "slide module-divider",
+      "id": "divider-8",
+      "data-seg": "8"
+    },
+    "inner": "<div class=\"text-pane\">\n      <div class=\"sheet-stamp\"><span class=\"stamp-num\">08</span><span class=\"stamp-of\">of 8 modules</span></div>\n      <h1 class=\"divider-title\">Live Question &amp; Answer</h1>\n      <p class=\"divider-desc\">Open floor. Bring your own project or question.</p>\n      <div class=\"divider-contents\"><div class=\"divider-content-item\">Live Q&amp;A</div></div>\n    </div>"
+  },
+  {
+    "attrs": {
+      "class": "slide",
+      "id": "slide-12",
+      "data-seg": "8"
+    },
+    "inner": "<div class=\"text-pane\">\n      <div class=\"eyebrow\">SEGMENT 08 &middot; 10 MIN</div>\n      <h1 class=\"slide-title\" style=\"font-size:clamp(28px,3.6vw,44px);\">Live Question<br/>&amp; Answer</h1>\n      <div class=\"tech-list\">\n        <div class=\"tech-item\">\n          <div class=\"tech-num\">1</div>\n          <div><div class=\"tech-name\">Submit via Pigeonhole</div><div class=\"tech-desc\">Anonymous is completely fine &mdash; ask whatever you actually want to know.</div></div>\n        </div>\n        <div class=\"tech-item\">\n          <div class=\"tech-num\">2</div>\n          <div><div class=\"tech-name\">Bring your own project</div><div class=\"tech-desc\">Share a decision or a project idea &mdash; we'll look at it live if time allows.</div></div>\n        </div>\n        <div class=\"tech-item\">\n          <div class=\"tech-num\">3</div>\n          <div><div class=\"tech-name\">Any panelist can answer</div><div class=\"tech-desc\">We'll route your question to whoever's expertise actually fits it.</div></div>\n        </div>\n      </div>\n      <div class=\"meta-row\" style=\"margin-top:16px;\">\n        <div class=\"meta-item\"><div class=\"meta-label\">PANEL</div><div class=\"meta-value\">All Speakers</div></div>\n        <div class=\"meta-item\"><div class=\"meta-label\">TIME</div><div class=\"meta-value\">12:00 &ndash; 12:10 PM</div></div>\n      </div>\n    </div>\n    <div class=\"canvas-pane\" data-scene-id=\"c12\"></div>"
+  }
+]

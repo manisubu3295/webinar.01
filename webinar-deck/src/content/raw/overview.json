@@ -1,0 +1,47 @@
+{
+  "eyebrow": "TODAY'S RUN OF SHOW",
+  "title": "What We're\nCovering",
+  "items": [
+    {
+      "num": "1",
+      "name": "Requirement Gathering",
+      "desc": "9:50 – 10:10 AM · 20 min"
+    },
+    {
+      "num": "2",
+      "name": "Technology Selection",
+      "desc": "10:10 – 10:30 AM · 20 min · Frontend, Backend, How to Choose"
+    },
+    {
+      "num": "3",
+      "name": "Database",
+      "desc": "10:30 – 10:50 AM · 20 min"
+    },
+    {
+      "num": "4",
+      "name": "Architecture",
+      "desc": "10:50 – 11:00 AM · 10 min"
+    },
+    {
+      "num": "5",
+      "name": "Build & Testing",
+      "desc": "11:05 – 11:25 AM · 20 min · (5 min break beforehand)"
+    },
+    {
+      "num": "6",
+      "name": "DevOps, Cloud & Observability",
+      "desc": "11:25 – 11:45 AM · 20 min"
+    },
+    {
+      "num": "7",
+      "name": "Closing: Career Guidance",
+      "desc": "11:45 AM – 12:00 PM · 15 min"
+    },
+    {
+      "num": "8",
+      "name": "Live Question & Answer",
+      "desc": "12:00 – 12:10 PM · 10 min"
+    }
+  ],
+  "sceneId": "c1"
+}

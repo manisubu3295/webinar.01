@@ -1,0 +1,11 @@
+<div class="field-group">
+  <label for="customerId">Customer ID (optional)</label>
+  <input
+    id="customerId"
+    type="text"
+    placeholder="e.g. C1001"
+    [ngModel]="customerId"
+    (ngModelChange)="onInput($event)"
+  />
+  <p class="hint">Leave blank for a walk-in sale. Regulars get their special pricing automatically.</p>
+</div>
