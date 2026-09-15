@@ -586,10 +586,15 @@
     color:var(--royal);
   }
 
+  .compare-table-scroll{
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    margin-top:10px;
+  }
   .compare-table{
     width:100%;
+    min-width:520px;
     border-collapse:collapse;
-    margin-top:10px;
     font-size:12px;
   }
   .compare-table th{
@@ -697,16 +702,13 @@
   }
   .nav-btn:hover{ background:var(--royal); color:var(--paper); transform:translateY(-1px); }
   .nav-btn:active{ transform:translateY(0); }
-  #dots{
-    display:flex; gap:7px;
+  #navPosition{
+    font-family:var(--font-plex-mono), Consolas, monospace;
+    font-size:11px;
+    color:var(--muted);
+    min-width:52px;
+    text-align:center;
   }
-  .dot{
-    width:5px; height:5px; border-radius:50%;
-    background:#C9D3D6;
-    cursor:pointer;
-    transition:background .2s ease, transform .2s ease;
-  }
-  .dot.active{ background:var(--gold); transform:scale(1.5); }
 
   /* ---- Top bar: running header, in place of a decorative eyebrow ---- */
   #topBar{
@@ -1123,4 +1125,47 @@
 
   @media (max-width: 880px){
     .slide-pane{ grid-template-columns:1fr; }
+  }
+
+  /* ---- Phone (≤600px): the deck was built for a laptop/projector at
+     the venue, but should still be readable and usable end to end on a
+     phone — tighter chrome, no fixed-width overflow, touch-sized
+     targets. Nothing here changes layout above this width. ---- */
+  @media (max-width: 600px){
+    #topBar{ padding:0 12px; }
+    #moduleBreadcrumb{ max-width:38vw; font-size:10px; }
+    #clockRange{ display:none; }
+    #progress-label{ margin-left:10px; padding-left:10px; font-size:10px; }
+    .curriculum-toggle{ margin-right:10px; }
+    .jump-menu{ margin-left:10px; padding-left:10px; }
+    .jump-menu-panel{
+      position:fixed;
+      top:40px; right:8px; left:8px;
+      width:auto;
+      max-height:75vh;
+    }
+
+    .curriculum-sidebar{ width:88vw; }
+
+    .slide-pane .text-pane{ padding:20px 16px 100px; }
+    .slide-pane.detail-slide .text-pane{ padding-top:18px; padding-bottom:100px; }
+    .slide-pane.title-slide .text-pane,
+    .slide-pane.module-divider .text-pane{ padding:20px 16px; }
+    .slide-pane.module-divider .text-pane{ padding-top:44px; }
+
+    .divider-desc, .slide-desc{ max-width:100%; }
+    .tech-list{ max-width:100%; }
+
+    #nav{ bottom:14px; gap:14px; }
+    .nav-btn{ width:44px; height:44px; font-size:17px; }
+
+    .ai-impact-item{ font-size:12.5px; }
+
+    .stage-image-pane, .stage-canvas-pane{ display:none; }
+  }
+
+  /* Small phones (≤380px): a further squeeze on the tightest chrome. */
+  @media (max-width: 380px){
+    #moduleBreadcrumb{ max-width:30vw; }
+    .curriculum-sidebar{ width:92vw; }
   }

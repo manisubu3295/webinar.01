@@ -17,24 +17,26 @@ export function ComparisonSlide({ groupKey }: { groupKey: GroupKey }) {
         </Eyebrow>
         <h2>{d.title}</h2>
         <div className="modal-tagline">{d.tagline}</div>
-        <table className="compare-table">
-          <thead>
-            <tr>
-              {d.columns.map((c, i) => (
-                <th key={i}>{c}</th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {d.rows.map((row, i) => (
-              <tr key={i}>
-                {row.map((cell, j) => (
-                  <td key={j}>{cell}</td>
+        <div className="compare-table-scroll">
+          <table className="compare-table">
+            <thead>
+              <tr>
+                {d.columns.map((c, i) => (
+                  <th key={i}>{c}</th>
                 ))}
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {d.rows.map((row, i) => (
+                <tr key={i}>
+                  {row.map((cell, j) => (
+                    <td key={j}>{cell}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
         {groupKey === 'architecture' && (
           <>
             <h3>Sketch: Monolith vs. Microservices</h3>
