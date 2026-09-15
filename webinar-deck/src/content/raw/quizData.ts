@@ -95,7 +95,7 @@ export const quizData = {
     ]
   },
   testing: {
-    title: "Module 5 Quiz: Build &amp; Testing",
+    title: "Module 5 Quiz: Build & Testing",
     questions: [
       {
         prompt: "What does a Unit Test check?",
@@ -118,7 +118,7 @@ export const quizData = {
     ]
   },
   devops: {
-    title: "Module 6 Quiz: DevOps &amp; Infrastructure",
+    title: "Module 6 Quiz: DevOps & Infrastructure",
     questions: [
       {
         prompt: "What is the main purpose of a CI/CD pipeline?",
