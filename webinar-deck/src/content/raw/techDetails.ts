@@ -11,7 +11,7 @@ console.log("Rendering <h1>Hello, Billing System</h1>");`,
     demoUrl: "http://localhost:8080/api/invoices/1",
     tagline: "A component-based UI library. You build small, reusable pieces of interface and compose them into full screens.",
     whatIsIt: "A JavaScript library for building user interfaces out of small, reusable components. You describe what the UI should look like for a given state, and React updates the page for you.",
-    realExample: "This build would use React for the billing screen counter staff use all day — small, reusable pieces like the bill card and customer search, updating instantly as a sale happens. It's proven at far larger scale too: Facebook and Instagram are built on it.",
+    realExample: "Facebook and Instagram are both built on React — every like button, comment box, and news feed update is a React component re-rendering.",
     steps: [
       "Scaffold a project with Vite: npm create vite@latest billing-ui -- --template react",
       "Build UI as components — one function, one piece of interface",
