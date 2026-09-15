@@ -3,6 +3,7 @@
 import { useDeckStore } from '@/lib/useDeckStore';
 import { schedule, segTitles } from '@/content/schedule';
 import { slideSub } from './slideMeta';
+import { JumpMenu } from './JumpMenu';
 
 export function TopBar() {
   const current = useDeckStore((s) => s.current);
@@ -29,6 +30,7 @@ export function TopBar() {
         )}
       </div>
       <div id="clockRange">{block?.clock ?? ''}</div>
+      <JumpMenu />
       <div id="progress-label">
         <b>{String(current + 1).padStart(2, '0')}</b> / <span>{slides.length}</span>
       </div>

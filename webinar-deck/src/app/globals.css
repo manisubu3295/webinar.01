@@ -348,12 +348,17 @@
     color:var(--muted);
   }
 
-  /* ---- Detail sub-slides: scrollable content, code editor, playground ---- */
+  /* ---- Detail sub-slides: scrollable content, code editor, playground ----
+     padding-bottom clears the fixed #nav bar (bottom:26px + 38px button
+     height) so scrolled content never runs under it — #nav sits above
+     the text-pane in paint order (its own stacking context), so without
+     this clearance the last bit of a tall diagram gets visually cut
+     through by the dots and arrows. */
   .slide-pane.detail-slide .text-pane{
     overflow-y:auto;
-    max-height:100vh;
+    max-height:calc(100vh - 39px);
     padding-top:3.5vh;
-    padding-bottom:3.5vh;
+    padding-bottom:110px;
   }
   .slide-pane.text-only .text-pane{
     max-width:900px;
@@ -736,6 +741,63 @@
     border-left:1px solid var(--mist);
   }
   #progress-label b{ color:var(--royal); font-weight:600; }
+
+  /* ---- Jump menu: fast module navigation for an 81-slide deck ---- */
+  .jump-menu{
+    position:relative;
+    margin-left:22px;
+    padding-left:22px;
+    border-left:1px solid var(--mist);
+  }
+  .jump-menu-trigger{
+    font-family:var(--font-plex-mono), Consolas, monospace;
+    font-size:11px;
+    font-weight:500;
+    color:var(--royal);
+    background:none;
+    border:none;
+    padding:0;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:5px;
+  }
+  .jump-menu-trigger:hover{ color:var(--gold); }
+  .jump-menu-caret{ font-size:13px; line-height:1; }
+  .jump-menu-panel{
+    position:absolute;
+    top:26px; right:0;
+    width:260px;
+    background:#ffffff;
+    border:1px solid #d6dce5;
+    border-radius:4px;
+    padding:6px;
+    z-index:20;
+    max-height:70vh;
+    overflow-y:auto;
+  }
+  .jump-menu-item{
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+    width:100%;
+    text-align:left;
+    background:none;
+    border:none;
+    border-radius:3px;
+    padding:8px 10px;
+    cursor:pointer;
+    font-size:12.5px;
+    color:var(--ink);
+  }
+  .jump-menu-item:hover{ background:var(--mist); }
+  .jump-menu-item.active{ background:var(--mist); color:var(--royal); font-weight:600; }
+  .jump-menu-num{
+    font-family:var(--font-plex-mono), Consolas, monospace;
+    font-size:10.5px;
+    color:var(--gold);
+    flex-shrink:0;
+  }
 
   /* ---- Schedule rail: the run-of-show as a dimensioned timeline ---- */
   #rail{
