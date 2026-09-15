@@ -368,12 +368,22 @@
      height) so scrolled content never runs under it — #nav sits above
      the text-pane in paint order (its own stacking context), so without
      this clearance the last bit of a tall diagram gets visually cut
-     through by the dots and arrows. */
+     through by the dots and arrows. Scrollbar hidden (still fully
+     scrollable by wheel/trackpad/touch/keyboard) — on the two-column
+     slides (anchor, AI Impact, Career Path) the text-pane is only the
+     left half of the screen, so a visible scrollbar renders as a stray
+     bar floating at the column boundary instead of the viewport edge;
+     hiding it everywhere keeps every detail slide's chrome consistent. */
   .slide-pane.detail-slide .text-pane{
     overflow-y:auto;
     max-height:calc(100vh - 39px);
     padding-top:3.5vh;
     padding-bottom:110px;
+    scrollbar-width:none;
+    -ms-overflow-style:none;
+  }
+  .slide-pane.detail-slide .text-pane::-webkit-scrollbar{
+    display:none;
   }
   .slide-pane.text-only .text-pane{
     max-width:900px;
@@ -707,7 +717,14 @@
     font-size:11px;
     color:var(--muted);
     min-width:52px;
+    height:38px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     text-align:center;
+    background:var(--paper);
+    border:1.5px solid #d6dce5;
+    border-radius:3px;
   }
 
   /* ---- Top bar: running header, in place of a decorative eyebrow ---- */
