@@ -45,9 +45,7 @@
     transition:opacity .7s cubic-bezier(.22,.61,.36,1), transform .7s cubic-bezier(.22,.61,.36,1);
     transform-origin: left center;
   }
-  .slide-pane.text-only,
-  .slide-pane.title-slide,
-  .slide-pane.module-divider{
+  .slide-pane.text-only{
     grid-template-columns: 1fr;
   }
   .slide-pane.active{
@@ -76,8 +74,25 @@
     height:100% !important;
     display:block;
   }
+  .stage-image-pane{
+    position:absolute;
+    top:0; right:0; bottom:0;
+    width:50%;
+    z-index:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:4vw 4.5vw;
+  }
+  .stage-image-pane img{
+    width:100%;
+    height:auto;
+    max-height:100%;
+    object-fit:contain;
+  }
   @media (max-width: 880px){
     .stage-canvas-pane{ display:none; }
+    .stage-image-pane{ display:none; }
   }
 
   /* ---- Typography ---- */

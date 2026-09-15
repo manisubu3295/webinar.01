@@ -30,6 +30,12 @@ export function Stage() {
           <SceneCanvas sceneId={currentMeta.sceneId} />
         </div>
       )}
+      {currentMeta.imageSrc && (
+        <div className="stage-image-pane">
+          {/* eslint-disable-next-line @next/next/no-img-element -- static export, external asset dropped into /public */}
+          <img src={currentMeta.imageSrc} alt="" />
+        </div>
+      )}
     </div>
   );
 }
