@@ -9,6 +9,7 @@ import { dbTypeGroups } from '@/content/raw/dbTypeGroups';
 import { infraTypeGroups } from '@/content/raw/infraTypeGroups';
 import { comparisonData } from '@/content/raw/comparisonData';
 import { quizData } from '@/content/raw/quizData';
+import { aiImpact } from '@/content/aiImpact';
 
 export type JumpTarget = { label: string; tag: string; index: number };
 
@@ -64,6 +65,12 @@ export function buildJumpTargets(slides: Slide[], jumpIndex: JumpIndex): JumpTar
   infraTypeGroups.forEach((g) => {
     const idx = slides.findIndex((s) => s.kind === 'infraTypeOverview' && s.typeKey === g.key);
     if (idx >= 0) targets.push({ label: g.title, tag: 'Infra Type', index: idx });
+  });
+
+  moduleDividers.forEach((d) => {
+    if (!aiImpact[d.seg]) return;
+    const idx = slides.findIndex((s) => s.kind === 'aiImpact' && s.seg === d.seg);
+    if (idx >= 0) targets.push({ label: `AI Impact — ${d.title}`, tag: 'AI Impact', index: idx });
   });
 
   return targets;

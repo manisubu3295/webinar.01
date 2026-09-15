@@ -6,28 +6,24 @@ import {
   drawRequestResponseSketch,
   drawTestPyramidSketch,
   drawRequirementGapSketch,
-  drawGatherOverviewSketch,
   drawFrontendFlowSketch,
-  drawChooseScaleSketch,
-  drawDataShapesSketch,
   drawCicdSketch,
-  drawClosingSketch,
   type SketchEntry,
 } from '@/components/diagrams/sketches';
 
 // One lead or supporting diagram per module-opening slide, grounded in the
 // same retail-billing narrative the tutorials use. Q&A (slide-12) is an
-// open floor with nothing to diagram, so it's left without one.
+// open floor with nothing to diagram, so it's left without one. slide-3,
+// slide-6, slide-7 and slide-11 dropped their inline sketch here — each
+// now has a hero illustration (in the new side image pane) covering the
+// same idea, so keeping both would just duplicate the point twice on one
+// slide instead of adding anything.
 const anchorSketches: Record<string, SketchEntry & { position: 'before' | 'after' }> = {
   'slide-2': { title: 'From One Sentence to a Real System', draw: drawRequirementGapSketch, viewBox: '0 0 360 130', maxWidth: 640, position: 'before' },
-  'slide-3': { title: 'Five Ways to Gather', draw: drawGatherOverviewSketch, viewBox: '0 0 330 90', maxWidth: 780, position: 'before' },
   'slide-4': { title: 'What the Frontend Actually Does', draw: drawFrontendFlowSketch, viewBox: '0 0 330 75', maxWidth: 720, position: 'before' },
   'slide-5': { title: 'Request / Response Flow', draw: drawRequestResponseSketch, viewBox: '0 0 460 130', maxWidth: 760, position: 'after' },
-  'slide-6': { title: 'How the Choice Tips', draw: drawChooseScaleSketch, viewBox: '0 0 300 140', maxWidth: 560, position: 'before' },
-  'slide-7': { title: 'Three Shapes of Data', draw: drawDataShapesSketch, viewBox: '0 0 380 125', maxWidth: 720, position: 'before' },
   'slide-9': { title: 'The Testing Pyramid', draw: drawTestPyramidSketch, viewBox: '0 0 340 140', maxWidth: 620, position: 'after' },
   'slide-10': { title: 'Ship Safely, Automatically', draw: drawCicdSketch, viewBox: '0 0 480 90', maxWidth: 780, position: 'before' },
-  'slide-11': { title: 'What Changed, What Didn’t', draw: drawClosingSketch, viewBox: '0 0 440 170', maxWidth: 680, position: 'after' },
 };
 
 export function AnchorSlide({ anchorId }: { anchorId: string }) {

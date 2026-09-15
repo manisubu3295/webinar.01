@@ -2,6 +2,7 @@ import { techDetails } from '@/content/raw/techDetails';
 import { FolderTree, CodeBlock } from '@/components/shared/CodeBlocks';
 import { DbQueryPlayground } from '@/components/playground/DbQueryPlayground';
 import { LiveDemoPanel } from '@/components/playground/LiveDemoPanel';
+import { TechLogo } from '@/components/shared/TechLogo';
 
 type DbDetail = {
   name: string;
@@ -25,7 +26,10 @@ export function DatabaseDetailSlide({ itemKey, index, total }: { itemKey: string
         <div className="eyebrow">
           DATABASE TECHNOLOGY &middot; {index + 1} OF {total}
         </div>
-        <h2>{d.name}</h2>
+        <h2>
+          <TechLogo itemKey={itemKey} size={26} />
+          {d.name}
+        </h2>
         <div className="modal-tagline">{d.tagline}</div>
         <h3>What is it?</h3>
         <p style={{ fontSize: 13, color: 'var(--ink)', lineHeight: 1.6, maxWidth: '80ch', margin: '0 0 4px 0' }}>{d.whatIsIt}</p>

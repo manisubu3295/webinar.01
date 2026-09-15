@@ -6,6 +6,7 @@ import { TopBar } from './TopBar';
 import { ScheduleRail } from './ScheduleRail';
 import { Stage } from './Stage';
 import { NavControls } from './NavControls';
+import { CurriculumSidebar } from './CurriculumSidebar';
 
 export function DeckShell() {
   const next = useDeckStore((s) => s.next);
@@ -28,6 +29,7 @@ export function DeckShell() {
       <ScheduleRail />
       <Stage />
       <NavControls />
+      <CurriculumSidebar />
     </div>
   );
 }

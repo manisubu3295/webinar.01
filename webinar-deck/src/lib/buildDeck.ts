@@ -4,6 +4,7 @@ import { groupItems, groupType, groupTitle, redundantSubGroups, comparisonGroups
 import { dbTypeGroups } from '@/content/raw/dbTypeGroups';
 import { infraTypeGroups } from '@/content/raw/infraTypeGroups';
 import { quizData } from '@/content/raw/quizData';
+import { aiImpact } from '@/content/aiImpact';
 import type { JumpIndex, Slide } from './types';
 
 /**
@@ -76,6 +77,14 @@ export function buildDeck(): { slides: Slide[]; jumpIndex: JumpIndex } {
         slides.push({ kind: 'quiz', seg: anchor.seg, groupKey, sub: 'Module Check' });
         jump(groupKey).__quiz = slides.length - 1;
       }
+    }
+
+    // One AI Impact reflection slide closes out each module that has
+    // content to reflect on (1-6) — Closing already serves this role for
+    // the whole session, Live Q&A has no content of its own.
+    if (aiImpact[divider.seg]) {
+      slides.push({ kind: 'aiImpact', seg: divider.seg });
+      jump('aiImpact')[divider.seg] = slides.length - 1;
     }
   }
 

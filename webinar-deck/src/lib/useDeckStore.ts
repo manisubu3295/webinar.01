@@ -18,6 +18,13 @@ type DeckState = {
   prev: () => void;
   jumpToItem: (groupKey: string, itemKey: string) => void;
 
+  // Which slide indices have been visited this session — in-session
+  // only, same lifetime as the rest of this store's interactive state
+  // (this is a live-presenter tool, not a multi-user LMS with accounts).
+  visited: Record<number, boolean>;
+  sidebarOpen: boolean;
+  toggleSidebar: () => void;
+
   // Persisted per-item interactive state, keyed so it survives a slide's
   // component unmounting when the user navigates away and back.
   codeEditors: Record<string, string>;
@@ -56,7 +63,7 @@ export const useDeckStore = create<DeckState>((set, get) => ({
     const { current, slides: all } = get();
     if (idx < 0 || idx >= all.length || idx === current) return;
     if (leavingTimer) clearTimeout(leavingTimer);
-    set({ leaving: current, current: idx });
+    set((s) => ({ leaving: current, current: idx, visited: { ...s.visited, [idx]: true } }));
     leavingTimer = setTimeout(() => set({ leaving: null }), 700);
   },
   next: () => get().goTo(get().current + 1),
@@ -65,6 +72,10 @@ export const useDeckStore = create<DeckState>((set, get) => ({
     const idx = get().jumpIndex[groupKey]?.[itemKey];
     if (typeof idx === 'number') get().goTo(idx);
   },
+
+  visited: { 0: true },
+  sidebarOpen: false,
+  toggleSidebar: () => set((s) => ({ sidebarOpen: !s.sidebarOpen })),
 
   codeEditors: {},
   setCodeEditor: (key, value) => set((s) => ({ codeEditors: { ...s.codeEditors, [key]: value } })),
