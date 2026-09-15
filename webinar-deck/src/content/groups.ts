@@ -6,12 +6,21 @@ export const groupItems = {
   gather: ['interview', 'observation', 'docstudy', 'prototype', 'workshop'],
   frontend: ['react', 'angular', 'vue', 'svelte', 'nextjs'],
   backend: ['java', 'csharp', 'python', 'node', 'go', 'php'],
-  choose: ['hire', 'teamskill', 'ecosystem', 'operate'],
+  choose: ['hire', 'teamskill', 'ecosystem', 'operate', 'apidesign'],
   database: ['postgresql', 'mysql', 'mssql', 'oracle', 'mongodb', 'redis'],
   architecture: ['monolith', 'modular', 'microservices', 'hybrid'],
-  testing: ['unit', 'integration', 'concurrency'],
-  devops: ['cicd', 'monitoring', 'rollback'],
-  infra: ['linux', 'aws', 'azure', 'kubernetes', 'openshift', 'tomcat', 'jboss'],
+  testing: ['unit', 'integration', 'concurrency', 'security', 'documentation', 'performance', 'accessibility'],
+  devops: ['cicd', 'monitoring', 'rollback', 'maintenance'],
+  infra: [
+    'linux', 'aws', 'azure', 'kubernetes', 'openshift', 'tomcat', 'jboss',
+    'jenkins', 'githubactions', 'gitlab', 'circleci', 'drone',
+    'git', 'github', 'bitbucket',
+    'jira', 'trello', 'confluence',
+    'grafana', 'prometheus', 'datadog', 'newrelic',
+    'graylog', 'elastic', 'splunk',
+    'postman', 'swagger',
+    'vault', 'sonarqube', 'snyk', 'auth0',
+  ],
 } as const;
 
 export type GroupKey = keyof typeof groupItems;

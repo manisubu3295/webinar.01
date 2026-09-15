@@ -140,5 +140,53 @@ export const conceptDetails = {
     example: "A bad deploy at 9 p.m. gets automatically reverted within seconds of the health check failing \u2014 nobody needs to be woken up to fix it.",
     whenToUse: "Every production deployment should have one. It's the safety net that makes shipping quickly actually safe.",
     sketch: 'rollback'
+  },
+
+  maintenance: {
+    name: "Post-Launch Maintenance",
+    tagline: "The longer tail after Monitoring and Rollback handle the moment something breaks.",
+    explanation: "The ongoing work after launch that isn't a dramatic incident: who's on call this week, which technical debt is safe to leave and which isn't, and when an old API version actually gets turned off.",
+    example: "The \"TODO: replace with your real...\" placeholders scattered across this deck's own tutorials are exactly the kind of small debt that's fine on day one and expensive if it's still there two years later.",
+    whenToUse: "From the day after launch, continuously \u2014 Monitoring tells you something broke; maintenance is the discipline that keeps fewer things breaking in the first place."
+  },
+
+  apidesign: {
+    name: "Does the API Contract Get Agreed First?",
+    tagline: "Frontend and backend agreeing on a request/response shape before either side finishes building.",
+    explanation: "Whether the exact shape of a request and its response \u2014 field names, types, error codes \u2014 gets written down and agreed before both teams start building in parallel, or gets discovered the hard way when the two sides finally connect.",
+    example: "A frontend team assumes a date comes back as \"2026-09-18\" while the backend actually sends a full timestamp \u2014 a five-minute conversation up front avoids a bug found the week before launch.",
+    whenToUse: "Whenever frontend and backend teams build in parallel rather than one waiting for the other \u2014 which is almost always, once a team is bigger than one person."
+  },
+
+  security: {
+    name: "Secure Coding",
+    tagline: "Never trust input from outside your own code.",
+    explanation: "The discipline of treating every piece of input \u2014 a form field, a URL parameter, an uploaded file \u2014 as something a stranger could have deliberately crafted to break or abuse the system, and validating it accordingly.",
+    example: "A discount-code field that isn't validated can become the way someone applies a 90% discount that was never meant to exist, just by editing the request instead of using the form.",
+    whenToUse: "On every single input that comes from outside your own backend \u2014 the same instinct as Unit Testing, but aimed at \"can this be abused\" instead of \"does this work.\""
+  },
+
+  documentation: {
+    name: "Documentation",
+    tagline: "The README, the API docs, and the runbook \u2014 written as part of shipping, not after.",
+    explanation: "A README that explains how to run the project, API docs that describe every endpoint, and a runbook for what to do when something breaks at 2 a.m. \u2014 all things that ship with the code, not things someone writes later if there's time.",
+    example: "The engineer who built a feature six months ago has moved on \u2014 the runbook is the only thing standing between a 2 a.m. incident and a guess.",
+    whenToUse: "Alongside the code itself, not after it \u2014 a pull request without updated docs is, in most well-run teams, not actually finished."
+  },
+
+  performance: {
+    name: "Performance Test",
+    tagline: "Deliberately sends sustained heavy traffic to see where the system actually slows down.",
+    explanation: "Unlike a Concurrency Test (many requests at the exact same instant), a performance test sends a sustained high volume of traffic over minutes, looking for where response times start climbing before anything actually breaks.",
+    example: "12,000 bills a day sounds manageable until festival week triples it \u2014 a load test run ahead of time finds the slow database query before real customers do.",
+    whenToUse: "Before any event or season where real traffic is expected to spike well above normal \u2014 finding the bottleneck in a test is free; finding it live is not."
+  },
+
+  accessibility: {
+    name: "Accessibility",
+    tagline: "Can someone using a screen reader or keyboard alone actually complete a purchase.",
+    explanation: "Checking that the system works for someone who can't use a mouse, can't see the screen, or relies on a screen reader to navigate \u2014 not a separate feature, but a basic requirement for the app to actually work for everyone who needs it.",
+    example: "A checkout button that only responds to a mouse click quietly locks out every keyboard-only and screen-reader user \u2014 often not discovered until a customer complaint, or a legal one.",
+    whenToUse: "From the first UI built, not retrofitted at the end \u2014 tools like axe or Lighthouse catch a large share of issues automatically, but not all of them."
   }
 } as const;

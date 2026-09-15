@@ -18,13 +18,38 @@ import {
   siKubernetes,
   siRedhatopenshift,
   siApachetomcat,
+  siJenkins,
+  siGithubactions,
+  siGitlab,
+  siCircleci,
+  siDrone,
+  siGit,
+  siGithub,
+  siBitbucket,
+  siJira,
+  siTrello,
+  siConfluence,
+  siGrafana,
+  siPrometheus,
+  siDatadog,
+  siNewrelic,
+  siGraylog,
+  siElastic,
+  siSplunk,
+  siPostman,
+  siSwagger,
+  siVault,
+  siSonarqubeserver,
+  siSnyk,
+  siAuth0,
 } from 'simple-icons';
 
 // Real, official brand marks — bundled locally at build time (simple-icons
 // is an installed dependency, not a runtime CDN fetch), so this stays
 // fully offline-safe like the rest of the deck. A handful of named items
-// have no mark in simple-icons at all (mssql, oracle, aws, azure, jboss —
-// verified during implementation, not guessed) and fall back to no logo.
+// have no mark in simple-icons at all (mssql, oracle, aws, azure, jboss,
+// and Slack — verified during implementation, not guessed) and fall back
+// to no logo.
 const LOGO_BY_ITEM_KEY: Record<string, { path: string; hex: string; title: string }> = {
   react: siReact,
   angular: siAngular,
@@ -45,6 +70,37 @@ const LOGO_BY_ITEM_KEY: Record<string, { path: string; hex: string; title: strin
   kubernetes: siKubernetes,
   openshift: siRedhatopenshift,
   tomcat: siApachetomcat,
+  // CI/CD Tools
+  jenkins: siJenkins,
+  githubactions: siGithubactions,
+  gitlab: siGitlab,
+  circleci: siCircleci,
+  drone: siDrone,
+  // Version Control & Collaboration
+  git: siGit,
+  github: siGithub,
+  bitbucket: siBitbucket,
+  // Project Management
+  jira: siJira,
+  trello: siTrello,
+  confluence: siConfluence,
+  // Monitoring Tools
+  grafana: siGrafana,
+  prometheus: siPrometheus,
+  datadog: siDatadog,
+  newrelic: siNewrelic,
+  // Logging Tools
+  graylog: siGraylog,
+  elastic: siElastic,
+  splunk: siSplunk,
+  // API Design Tools
+  postman: siPostman,
+  swagger: siSwagger,
+  // Security Tools
+  vault: siVault,
+  sonarqube: siSonarqubeserver,
+  snyk: siSnyk,
+  auth0: siAuth0,
 };
 
 export function hasTechLogo(itemKey: string): boolean {
