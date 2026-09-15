@@ -5,7 +5,7 @@ export const infraDetails = {
   linux: {
     name: "Linux",
     tagline: "The operating system nearly all production servers run on \u2014 free, stable, and infinitely configurable.",
-    whatIsIt: "A free, open-source operating system that runs the vast majority of the world's servers, from tiny cloud instances to the world's fastest supercomputers.",
+    whatIsIt: "A free, open-source operating system running the vast majority of the world's servers — from tiny cloud instances to the world's fastest supercomputers.",
     realExample: "Nearly every website you've ever visited, including Google, Amazon, and Netflix, is served from Linux machines running in a data center somewhere.",
     steps: [
       "Choose a distribution suited to production: Ubuntu Server or Debian for simplicity, RHEL/Rocky for enterprise support contracts",
@@ -32,7 +32,7 @@ export const infraDetails = {
   aws: {
     name: "AWS",
     tagline: "The largest cloud provider. If a service exists, AWS probably has it \u2014 the challenge is knowing which one to use.",
-    whatIsIt: "Amazon's cloud computing platform. Rents you servers, databases, storage, and hundreds of other services by the hour, instead of you buying physical hardware.",
+    whatIsIt: "Amazon's cloud computing platform — rents servers, databases, storage, and hundreds of other services by the hour, instead of buying physical hardware.",
     realExample: "Netflix runs almost entirely on AWS, streaming to over 200 million subscribers without owning a single server of its own.",
     steps: [
       "Start with EC2 (virtual servers) or Elastic Beanstalk (managed app hosting) for a simple deploy",
@@ -60,7 +60,7 @@ export const infraDetails = {
   azure: {
     name: "Azure",
     tagline: "Microsoft's cloud platform \u2014 the natural fit if you're already running .NET or a Windows-based enterprise stack.",
-    whatIsIt: "Microsoft's cloud computing platform, offering similar building blocks to AWS, with particularly strong integration for companies already using Windows, Office 365, or .NET.",
+    whatIsIt: "Microsoft's cloud computing platform — similar building blocks to AWS, with strong integration for companies already on Windows, Office 365, or .NET.",
     realExample: "Walmart runs significant parts of its e-commerce infrastructure on Azure, partly to avoid depending on its retail rival Amazon's AWS.",
     steps: [
       "Start with App Service for a managed way to run your app without touching a VM",
@@ -87,7 +87,7 @@ export const infraDetails = {
   kubernetes: {
     name: "Kubernetes",
     tagline: "Runs and manages containers across many machines \u2014 restarting failed ones, scaling under load, and routing traffic automatically.",
-    whatIsIt: "A system that runs and manages containers across a cluster of machines, automatically restarting failed ones, scaling up under load, and routing traffic to healthy instances.",
+    whatIsIt: "Runs and manages containers across a cluster of machines — restarting failed ones, scaling up under load, and routing traffic to healthy instances.",
     realExample: "Spotify runs its backend services on Kubernetes, letting hundreds of independent engineering teams deploy without stepping on each other.",
     steps: [
       "Package your app as a container image with Docker first",
@@ -119,7 +119,7 @@ spec:
   openshift: {
     name: "OpenShift",
     tagline: "Red Hat's enterprise Kubernetes platform \u2014 adds developer tooling, stricter security defaults, and support contracts on top of plain Kubernetes.",
-    whatIsIt: "Red Hat's enterprise version of Kubernetes, adding developer tooling, stricter security defaults, and a paid support contract on top of the open-source project.",
+    whatIsIt: "Red Hat's enterprise version of Kubernetes — developer tooling, stricter security defaults, and a paid support contract on top of the open-source project.",
     realExample: "Many banks and government agencies choose OpenShift over plain Kubernetes specifically because it comes with a support contract and compliance certifications they are legally required to have.",
     steps: [
       "Everything in plain Kubernetes still applies \u2014 OpenShift runs real Kubernetes underneath",
@@ -145,7 +145,7 @@ spec:
   tomcat: {
     name: "Tomcat",
     tagline: "A lightweight Java servlet container. Runs Java web apps packaged as WAR files \u2014 simpler than a full application server.",
-    whatIsIt: "A lightweight server that runs Java web applications packaged as WAR files. Simpler than a full application server, handling just the essentials of serving Java web requests.",
+    whatIsIt: "A lightweight server for Java web apps packaged as WAR files — simpler than a full application server, handling just the essentials.",
     realExample: "Many mid-sized Java web applications, like internal enterprise tools and university systems, run on Tomcat because it's free, simple, and good enough for their scale.",
     steps: [
       "Package your Java web app as a .war file",
@@ -175,7 +175,7 @@ spec:
   jboss: {
     name: "JBoss / WildFly",
     tagline: "A full Java EE application server \u2014 more built-in features than Tomcat (messaging, transactions, clustering), common in large enterprise Java shops.",
-    whatIsIt: "A full Java EE application server with built-in support for messaging, transactions, and clustering, more capable than Tomcat for applications that need those enterprise features.",
+    whatIsIt: "A full Java EE application server with built-in messaging, transactions, and clustering — more capable than Tomcat when those enterprise features are needed.",
     realExample: "Large enterprise systems that need guaranteed message delivery, like insurance claim processing pipelines, often run on JBoss for its built-in transaction and messaging support.",
     steps: [
       "Deploy your app by dropping a .war or .ear file into standalone/deployments/",

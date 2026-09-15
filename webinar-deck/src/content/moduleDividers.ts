@@ -26,7 +26,7 @@ export const moduleDividers: ModuleDividerContent[] = [
     seg: '3',
     num: '03',
     title: 'Database',
-    desc: "Forty outlets need one shared, trustworthy answer for what a customer owes and what's on the shelf — and that answer has to hold up at three times the normal load in festival week. Relational, document, and key-value databases, and when to reach for each one.",
+    desc: "The frontend and backend are chosen. Now forty outlets need one shared, trustworthy answer for what a customer owes and what's on the shelf — one that holds up at three times the normal load in festival week. Relational, document, and key-value databases, and when to reach for each one.",
     contents: ['Relational Databases', 'NoSQL & Distributed Databases'],
   },
   {
@@ -34,7 +34,7 @@ export const moduleDividers: ModuleDividerContent[] = [
     seg: '4',
     num: '04',
     title: 'Architecture',
-    desc: 'One head-office system, or forty independent ones — or something in between? The shape decision that outlives almost every other choice in this build.',
+    desc: 'Frontend, backend, and database are all chosen now. One head-office system, or forty independent ones — or something in between? The shape decision that outlives almost every other choice in this build.',
     contents: ['Monolith', 'Modular Monolith', 'Microservices', 'Hybrid'],
   },
   {
@@ -42,7 +42,7 @@ export const moduleDividers: ModuleDividerContent[] = [
     seg: '5',
     num: '05',
     title: 'Build & Testing',
-    desc: "Writing the actual billing logic — price, tax, discount, return — and the tests that catch the bug that would otherwise surface at 9 p.m. on a Friday, four hundred kilometers from head office.",
+    desc: "The shape is decided. Now the actual billing logic gets written — price, tax, discount, return — along with the tests that catch the bug that would otherwise surface at 9 p.m. on a Friday, four hundred kilometers from head office.",
     contents: ['Unit Test', 'Integration Test', 'Concurrency Test'],
   },
   {
@@ -50,7 +50,7 @@ export const moduleDividers: ModuleDividerContent[] = [
     seg: '6',
     num: '06',
     title: 'DevOps & Infrastructure',
-    desc: 'Getting the finished system safely into 40 stores, watching it stay healthy once it’s there, and the cloud building blocks the whole thing runs on.',
+    desc: 'The code is written and tested. Now it has to reach all 40 stores safely, stay healthy once it’s there, and run on infrastructure built for the job.',
     contents: ['CI/CD Pipeline', 'Monitoring', 'Rollback', 'Operating System', 'Cloud Providers', 'Container & Orchestration', 'Application Servers'],
   },
   {
