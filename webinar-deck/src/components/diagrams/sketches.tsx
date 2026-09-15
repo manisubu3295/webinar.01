@@ -1,7 +1,7 @@
 import rough from 'roughjs';
 import type { SketchDrawFn } from './RoughSketch';
 
-export type SketchEntry = { title: string; draw: SketchDrawFn; viewBox: string; height: number };
+export type SketchEntry = { title: string; draw: SketchDrawFn; viewBox: string; maxWidth?: number };
 
 const ROYAL = '#1c4e68';
 const GOLD = '#e8a23d';

@@ -115,7 +115,7 @@ export const conceptDetails = {
     tagline: "Fires many requests at the exact same moment, on purpose.",
     explanation: "Deliberately fires many requests at the exact same instant to see if your system actually holds up under real-world timing pressure.",
     example: "20 threads all try to bill the very last unit of stock at the same moment \u2014 a concurrency test proves that only one of them actually succeeds.",
-    whenToUse: "Anywhere two people could plausibly do the same action at the same instant \u2014 which, at 12,000 bills a day, happens constantly."
+    whenToUse: "Anywhere two people could plausibly do the same action at the same instant \u2014 which, at 12,000 bills a day, happens constantly. It's the same instinct as Observation back in Module 1: the rule nobody writes down until real, simultaneous traffic finds it."
   },
 
   cicd: {

@@ -38,13 +38,13 @@ export function ComparisonSlide({ groupKey }: { groupKey: GroupKey }) {
         {groupKey === 'architecture' && (
           <>
             <h3>Sketch: Monolith vs. Microservices</h3>
-            <RoughSketch draw={drawArchComparisonSketch} viewBox="0 0 340 160" height={160} maxWidth={360} />
+            <RoughSketch draw={drawArchComparisonSketch} viewBox="0 0 340 160" maxWidth={640} />
           </>
         )}
         {groupKey === 'infra' && (
           <>
             <h3>Sketch: Four Layers, Not Four Choices</h3>
-            <RoughSketch draw={drawInfraStackSketch} viewBox="0 0 340 150" height={150} maxWidth={360} />
+            <RoughSketch draw={drawInfraStackSketch} viewBox="0 0 340 150" maxWidth={640} />
           </>
         )}
       </div>

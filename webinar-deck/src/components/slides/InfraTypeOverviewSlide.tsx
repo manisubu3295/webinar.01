@@ -31,7 +31,7 @@ export function InfraTypeOverviewSlide({ typeKey }: { typeKey: string }) {
         {HIGHLIGHTABLE.has(typeKey) && (
           <>
             <h3>Sketch: Where This Layer Sits</h3>
-            <RoughSketch draw={drawInfraStackHighlighted(typeKey as 'os' | 'cloud' | 'orchestration' | 'appserver')} viewBox="0 0 340 150" height={150} maxWidth={500} />
+            <RoughSketch draw={drawInfraStackHighlighted(typeKey as 'os' | 'cloud' | 'orchestration' | 'appserver')} viewBox="0 0 340 150" maxWidth={640} />
           </>
         )}
         <h3>Technologies in this category</h3>

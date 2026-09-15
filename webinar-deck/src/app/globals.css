@@ -485,6 +485,39 @@
   }
   .example-box strong{ color:var(--royal); }
 
+  /* ---- Diagram frame: every RoughSketch sits in one of these, so it
+     reads as a deliberate figure at real size, not a stray corner doodle ---- */
+  .sketch-frame{
+    margin:14px auto 4px auto;
+    width:100%;
+    background:#ffffff;
+    border:1px solid #d6dce5;
+    border-radius:4px;
+    padding:18px 20px;
+  }
+
+  /* ---- Impact callout: the concrete "without this / with this"
+     consequence for the 40-store build, on the highest-stakes decisions ---- */
+  .impact-box{
+    margin-top:16px;
+    border:1.5px solid var(--gold);
+    background:var(--mist);
+    border-radius:4px;
+    padding:12px 16px;
+    font-size:12.5px;
+    color:var(--ink);
+    line-height:1.55;
+  }
+  .impact-box .impact-label{
+    display:block;
+    font-family:var(--font-plex-mono), Consolas, monospace;
+    font-size:10.5px;
+    font-weight:600;
+    letter-spacing:0.3px;
+    color:var(--gold);
+    margin-bottom:6px;
+  }
+
   /* ---- Quiz slides ---- */
   .quiz-question{
     margin-bottom:22px;

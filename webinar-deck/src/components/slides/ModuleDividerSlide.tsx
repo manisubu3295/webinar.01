@@ -33,7 +33,7 @@ export function ModuleDividerSlide({ seg }: { seg: string }) {
       </div>
       {stages && (
         <div style={{ marginTop: 30, display: 'flex', justifyContent: 'center' }}>
-          <RoughSketch draw={drawRoadmapSketch(stages)} viewBox="0 0 360 80" height={80} maxWidth={480} />
+          <RoughSketch draw={drawRoadmapSketch(stages)} viewBox="0 0 360 80" maxWidth={620} />
         </div>
       )}
     </div>

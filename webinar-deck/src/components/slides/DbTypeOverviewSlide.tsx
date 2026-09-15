@@ -29,13 +29,13 @@ export function DbTypeOverviewSlide({ typeKey }: { typeKey: string }) {
         {typeKey === 'relational' && (
           <>
             <h3>Sketch: One Customer, Many Invoices</h3>
-            <RoughSketch draw={drawDbSchemaSketch} viewBox="0 0 400 110" height={110} maxWidth={500} />
+            <RoughSketch draw={drawDbSchemaSketch} viewBox="0 0 400 110" maxWidth={700} />
           </>
         )}
         {typeKey === 'nosql' && (
           <>
             <h3>Sketch: No Fixed Shape</h3>
-            <RoughSketch draw={drawNoSqlSketch} viewBox="0 0 370 130" height={130} maxWidth={500} />
+            <RoughSketch draw={drawNoSqlSketch} viewBox="0 0 370 130" maxWidth={700} />
           </>
         )}
         <h3>Databases in this category</h3>

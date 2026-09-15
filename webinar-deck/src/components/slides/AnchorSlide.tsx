@@ -19,15 +19,15 @@ import {
 // same retail-billing narrative the tutorials use. Q&A (slide-12) is an
 // open floor with nothing to diagram, so it's left without one.
 const anchorSketches: Record<string, SketchEntry & { position: 'before' | 'after' }> = {
-  'slide-2': { title: 'From One Sentence to a Real System', draw: drawRequirementGapSketch, viewBox: '0 0 360 130', height: 130, position: 'before' },
-  'slide-3': { title: 'Five Ways to Gather', draw: drawGatherOverviewSketch, viewBox: '0 0 330 90', height: 90, position: 'before' },
-  'slide-4': { title: 'What the Frontend Actually Does', draw: drawFrontendFlowSketch, viewBox: '0 0 330 75', height: 75, position: 'before' },
-  'slide-5': { title: 'Request / Response Flow', draw: drawRequestResponseSketch, viewBox: '0 0 460 130', height: 130, position: 'after' },
-  'slide-6': { title: 'How the Choice Tips', draw: drawChooseScaleSketch, viewBox: '0 0 300 140', height: 140, position: 'before' },
-  'slide-7': { title: 'Three Shapes of Data', draw: drawDataShapesSketch, viewBox: '0 0 380 125', height: 125, position: 'before' },
-  'slide-9': { title: 'The Testing Pyramid', draw: drawTestPyramidSketch, viewBox: '0 0 340 140', height: 140, position: 'after' },
-  'slide-10': { title: 'Ship Safely, Automatically', draw: drawCicdSketch, viewBox: '0 0 480 90', height: 90, position: 'before' },
-  'slide-11': { title: 'What Changed, What Didn’t', draw: drawClosingSketch, viewBox: '0 0 440 170', height: 170, position: 'after' },
+  'slide-2': { title: 'From One Sentence to a Real System', draw: drawRequirementGapSketch, viewBox: '0 0 360 130', maxWidth: 640, position: 'before' },
+  'slide-3': { title: 'Five Ways to Gather', draw: drawGatherOverviewSketch, viewBox: '0 0 330 90', maxWidth: 780, position: 'before' },
+  'slide-4': { title: 'What the Frontend Actually Does', draw: drawFrontendFlowSketch, viewBox: '0 0 330 75', maxWidth: 720, position: 'before' },
+  'slide-5': { title: 'Request / Response Flow', draw: drawRequestResponseSketch, viewBox: '0 0 460 130', maxWidth: 760, position: 'after' },
+  'slide-6': { title: 'How the Choice Tips', draw: drawChooseScaleSketch, viewBox: '0 0 300 140', maxWidth: 560, position: 'before' },
+  'slide-7': { title: 'Three Shapes of Data', draw: drawDataShapesSketch, viewBox: '0 0 380 125', maxWidth: 720, position: 'before' },
+  'slide-9': { title: 'The Testing Pyramid', draw: drawTestPyramidSketch, viewBox: '0 0 340 140', maxWidth: 620, position: 'after' },
+  'slide-10': { title: 'Ship Safely, Automatically', draw: drawCicdSketch, viewBox: '0 0 480 90', maxWidth: 780, position: 'before' },
+  'slide-11': { title: 'What Changed, What Didn’t', draw: drawClosingSketch, viewBox: '0 0 440 170', maxWidth: 680, position: 'after' },
 };
 
 export function AnchorSlide({ anchorId }: { anchorId: string }) {
@@ -38,7 +38,7 @@ export function AnchorSlide({ anchorId }: { anchorId: string }) {
   const sketchBlock = sketch && (
     <div style={{ margin: sketch.position === 'before' ? '18px 0 6px' : '20px 0 0' }}>
       <h3 style={{ marginTop: 0 }}>{sketch.title}</h3>
-      <RoughSketch draw={sketch.draw} viewBox={sketch.viewBox} height={sketch.height} maxWidth={620} />
+      <RoughSketch draw={sketch.draw} viewBox={sketch.viewBox} maxWidth={sketch.maxWidth} />
     </div>
   );
 
