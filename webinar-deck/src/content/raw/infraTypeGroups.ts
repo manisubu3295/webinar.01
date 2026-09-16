@@ -12,15 +12,6 @@ export const infraTypeGroups = [
     items: ['linux']
   },
   {
-    key: 'cloud',
-    title: 'Cloud Providers',
-    tagline: "Rented infrastructure, billed by the hour \u2014 so you don't own or rack a single physical server.",
-    explanation: "Cloud providers rent you compute, storage, and managed services instead of you buying and racking physical servers. The three major players (AWS, Azure, and Google Cloud) all offer largely equivalent building blocks under different names.",
-    example: "Instead of buying a database server, you click a button and rent a fully managed one \u2014 backups, patching, and failover handled for you.",
-    whenToUse: "Almost every new project today starts here rather than with owned hardware, unless data residency or cost at massive scale argues otherwise.",
-    items: ['aws','azure']
-  },
-  {
     key: 'orchestration',
     title: 'Container & Orchestration',
     tagline: "Runs many containers across many machines, and keeps them running.",
@@ -28,6 +19,15 @@ export const infraTypeGroups = [
     example: "If a server hosting 3 of your containers crashes at 2 a.m., the orchestrator reschedules them onto healthy machines automatically, before anyone gets paged.",
     whenToUse: "Once you have more than a handful of services, or need automatic scaling and self-healing you don't want to build by hand.",
     items: ['kubernetes','openshift']
+  },
+  {
+    key: 'cloud',
+    title: 'Cloud Providers',
+    tagline: "Rented infrastructure, billed by the hour \u2014 so you don't own or rack a single physical server.",
+    explanation: "Cloud providers rent you compute, storage, and managed services instead of you buying and racking physical servers. The three major players (AWS, Azure, and Google Cloud) all offer largely equivalent building blocks under different names \u2014 including a managed place to run the Kubernetes cluster from the last category.",
+    example: "Instead of buying a database server, you click a button and rent a fully managed one \u2014 backups, patching, and failover handled for you.",
+    whenToUse: "Almost every new project today starts here rather than with owned hardware, unless data residency or cost at massive scale argues otherwise.",
+    items: ['aws','azure']
   },
   {
     key: 'appserver',
@@ -50,29 +50,20 @@ export const infraTypeGroups = [
   {
     key: 'vcs',
     title: 'Version Control & Collaboration',
-    tagline: "The tools a team uses to change code together without overwriting each other — and to review that change before it ships.",
-    explanation: "Git tracks every change; GitHub and Bitbucket host that history and add the pull-request workflow — propose a change, get it reviewed, merge it — on top.",
-    example: "The \"branch to merge\" story told in Module 5's Build & Testing segment is this category in practice: a real pull request, reviewed and merged, with tests running against it automatically.",
-    whenToUse: "Git itself is not optional — GitHub is the default choice for most teams; Bitbucket is the natural pick specifically when a team is already standardized on Jira.",
-    items: ['git','github','bitbucket']
-  },
-  {
-    key: 'pm',
-    title: 'Project Management',
-    tagline: "Where a requirement from Module 1 actually becomes a tracked, assigned piece of work.",
-    explanation: "A ticket tracker turns a vague requirement into something with an owner, a status, and a link to the code that resolved it — the connective tissue between Module 1's interviews and Module 5's pull requests.",
-    example: "\"Handle returns\", the requirement surfaced back in Module 1's interview, becomes a real ticket a developer picks up, works, and links a pull request to.",
-    whenToUse: "Jira for most teams past a handful of people; Trello when a board is genuinely all a small team needs; Confluence alongside either one for the documentation this deck's last review flagged as missing.",
-    items: ['jira','trello','confluence']
+    tagline: "The tools a team uses to change code together, track the work that change resolves, and review it before it ships.",
+    explanation: "Git tracks every change; GitHub and Bitbucket host that history and add the pull-request workflow — propose a change, get it reviewed, merge it — on top. Jira is the connective tissue underneath all of it: the ticket a pull request actually links back to.",
+    example: "The \"branch to merge\" story told in Module 5's Build & Testing segment is this category in practice: a real pull request, linked to the Jira ticket it resolves, reviewed and merged, with tests running against it automatically.",
+    whenToUse: "Git itself is not optional — GitHub is the default choice for most teams; Bitbucket is the natural pick specifically when a team is already standardized on Jira, which is exactly why the two are grouped here.",
+    items: ['git','github','bitbucket','jira']
   },
   {
     key: 'monitoring',
     title: 'Monitoring Tools',
     tagline: "The concrete products behind the Monitoring idea — a checkup that runs every second, not once a year.",
-    explanation: "Monitoring (earlier in this module) is the idea; these are the real products, splitting into an open-source pairing you run yourself (Prometheus storing the numbers, Grafana drawing the dashboard) and commercial all-in-one platforms.",
-    example: "A team running its own Kubernetes cluster very often pairs Prometheus and Grafana specifically because Prometheus is already the default metrics store for Kubernetes itself.",
-    whenToUse: "Prometheus + Grafana when a team is comfortable running and connecting open-source tools themselves; Datadog or New Relic when the budget exists to pay for one product that already does all of it.",
-    items: ['grafana','prometheus','datadog','newrelic']
+    explanation: "Monitoring (earlier in this module) is the idea; these are the real products, splitting into an open-source dashboard you run yourself (Grafana, drawing charts from whatever metrics source feeds it) and commercial all-in-one platforms.",
+    example: "A team running its own Kubernetes cluster very often reaches for Grafana specifically because it's already the default dashboard layer most Kubernetes metrics tooling expects.",
+    whenToUse: "Grafana when a team is comfortable running and connecting open-source tools themselves; Datadog or New Relic when the budget exists to pay for one product that already does all of it.",
+    items: ['grafana','datadog','newrelic']
   },
   {
     key: 'logging',
@@ -95,10 +86,10 @@ export const infraTypeGroups = [
   {
     key: 'security',
     title: 'Security Tools',
-    tagline: "Where secrets, dependency vulnerabilities, and code-quality issues actually get caught — automatically, not by hoping someone notices.",
-    explanation: "Four different jobs: Vault keeps secrets out of code, SonarQube scans the code you wrote, Snyk scans the dependencies you didn't write, and Auth0 handles login/permissions so a team isn't building auth from scratch.",
+    tagline: "Where secrets and code-quality issues actually get caught — automatically, not by hoping someone notices.",
+    explanation: "Two different jobs: Vault keeps secrets out of code, and SonarQube scans the code you wrote for bugs and vulnerabilities before a human reviewer even opens the pull request.",
     example: "Every \"TODO: replace with your real credentials\" placeholder across this module's own command playgrounds is exactly the gap Vault exists to close in a real deployment.",
-    whenToUse: "All four are close to standard practice on any production system handling real customer or payment data — which describes the billing system this entire session builds.",
-    items: ['vault','sonarqube','snyk','auth0']
+    whenToUse: "Both are close to standard practice on any production system handling real customer or payment data — which describes the billing system this entire session builds.",
+    items: ['vault','sonarqube']
   }
 ] as const;

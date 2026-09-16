@@ -393,50 +393,6 @@ BILL-142: Add return flow to billing API
       { label: "Move a ticket to Done", command: "jira issue move BILL-142 Done", response: "BILL-142 moved to Done" }
     ]
   },
-  trello: {
-    name: "Trello",
-    tagline: "A simple drag-and-drop board — the lightweight choice when a full Jira setup is more process than a small team needs.",
-    whatIsIt: "A visual, card-based board (To Do / Doing / Done columns) for tracking work — far lighter-weight than Jira, popular with small teams and early-stage projects.",
-    realExample: "Many small teams start project tracking on Trello specifically because it takes minutes to set up, versus the configuration a Jira project usually needs.",
-    structureLabel: "Board layout",
-    folder:
-`Billing Project/
-  To Do/
-  In Progress/
-  Done/`,
-    code:
-`# A Trello card, not a code file:
-Title: Add return flow
-List: In Progress
-
-<span class="code-placeholder"># TODO: point this at your real board</span>`,
-    commands: [
-      { label: "List cards in a list", command: "trello list cards \"In Progress\"", response: "Add return flow\nFix tax rounding" },
-      { label: "Move a card", command: "trello card move \"Add return flow\" Done", response: "Card moved to Done" }
-    ]
-  },
-  confluence: {
-    name: "Confluence",
-    tagline: "Where the requirement doc and the runbook actually live — not a README nobody opens again.",
-    whatIsIt: "A team wiki for documentation — requirement docs, architecture decisions, and runbooks live here as pages that link to each other, instead of scattered files nobody remembers to update.",
-    realExample: "Teams already on Jira commonly keep their runbooks and architecture decision records in Confluence specifically because a ticket can link straight to the page explaining why a decision was made.",
-    structureLabel: "Space layout",
-    folder:
-`Billing Space/
-  Requirements/
-  Architecture Decisions/
-  Runbooks/`,
-    code:
-`# A Confluence page, not a code file:
-Title: Billing API — Return Flow Runbook
-
-<span class="code-placeholder"># TODO: point this at your real space</span>`,
-    commands: [
-      { label: "Search pages", command: "confluence search \"return flow\"", response: "Billing API — Return Flow Runbook" },
-      { label: "List recent edits", command: "confluence recent", response: "Return Flow Runbook — edited 2 hours ago" }
-    ]
-  },
-
   // ---- Monitoring Tools ----
   grafana: {
     name: "Grafana",
@@ -458,26 +414,6 @@ rate(http_requests_total{job="billing-api"}[5m])
     commands: [
       { label: "List dashboards", command: "grafana-cli dashboards list", response: "Billing API Latency\nError Rate by Store" },
       { label: "Check alert status", command: "grafana-cli alerts status", response: "error-rate: OK" }
-    ]
-  },
-  prometheus: {
-    name: "Prometheus",
-    tagline: "Scrapes and stores the raw metrics almost every other monitoring tool in this category ends up reading from.",
-    whatIsIt: "An open-source metrics database that regularly \"scrapes\" numbers (request count, latency, error rate) from an app and stores them as a time series, ready for Grafana or an alert to read.",
-    realExample: "SoundCloud built Prometheus originally for its own infrastructure; it's now the default metrics store underneath most Kubernetes clusters in production.",
-    structureLabel: "Config layout",
-    folder:
-`prometheus/
-  prometheus.yml
-  rules/
-    alerts.yml`,
-    code:
-`scrape_configs:
-  - job_name: 'billing-api'
-    <span class="code-placeholder"># TODO: point this at your real service endpoint</span>`,
-    commands: [
-      { label: "Query current error rate", command: "promtool query instant 'rate(errors_total[5m])'", response: "billing-api  0.002" },
-      { label: "Check target health", command: "promtool check targets", response: "billing-api: UP" }
     ]
   },
   datadog: {
@@ -672,41 +608,4 @@ sonar.sources=src
       { label: "Check quality gate status", command: "sonar-scanner -Dsonar.qualitygate.wait=true", response: "Quality Gate: PASSED" }
     ]
   },
-  snyk: {
-    name: "Snyk",
-    tagline: "Scans every dependency your code pulls in for known vulnerabilities — the ones you didn't write yourself.",
-    whatIsIt: "A vulnerability scanner focused on dependencies — the npm/pip/maven packages your code pulls in — flagging known security issues in libraries you didn't write yourself, before they ship.",
-    realExample: "Snyk's own published data shows it scanning billions of dependency versions a year across its user base, catching vulnerabilities in third-party code most teams never audit by hand.",
-    structureLabel: "Config layout",
-    folder:
-`billing-api/
-  .snyk
-  package.json`,
-    code:
-`snyk test
-
-<span class="code-placeholder"># TODO: point this at your real project manifest</span>`,
-    commands: [
-      { label: "Scan for vulnerabilities", command: "snyk test", response: "✓ Tested 142 dependencies, no vulnerabilities found" },
-      { label: "Monitor the project ongoing", command: "snyk monitor", response: "Project monitored, snapshot saved" }
-    ]
-  },
-  auth0: {
-    name: "Auth0",
-    tagline: "Login, signup, and \"who's allowed to do what\" handled by someone who does only that — instead of building it yourself.",
-    whatIsIt: "An authentication-as-a-service platform handling login, signup, password resets, and permissions — the alternative to a team building and maintaining its own auth system from scratch.",
-    realExample: "Auth0's own customer list includes companies like Siemens using it specifically to avoid building and securing login infrastructure themselves.",
-    structureLabel: "Config layout",
-    folder:
-`billing-api/
-  auth0-config.json`,
-    code:
-`auth0 login
-
-<span class="code-placeholder"># TODO: point this at your real Auth0 tenant</span>`,
-    commands: [
-      { label: "Check current user session", command: "auth0 users show current", response: "Logged in as: ops@retailco.example" },
-      { label: "List login logs", command: "auth0 logs list", response: "Successful login — 2 minutes ago" }
-    ]
-  }
 } as const;

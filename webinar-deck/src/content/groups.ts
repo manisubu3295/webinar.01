@@ -10,16 +10,15 @@ export const groupItems = {
   database: ['postgresql', 'mysql', 'mssql', 'oracle', 'mongodb', 'redis'],
   architecture: ['monolith', 'modular', 'microservices', 'hybrid'],
   testing: ['unit', 'integration', 'concurrency', 'security', 'documentation', 'performance', 'accessibility'],
-  devops: ['cicd', 'monitoring', 'rollback', 'maintenance'],
+  devops: ['cicd', 'monitoring', 'rollback'],
   infra: [
-    'linux', 'aws', 'azure', 'kubernetes', 'openshift', 'tomcat', 'jboss',
+    'linux', 'kubernetes', 'openshift', 'aws', 'azure', 'tomcat', 'jboss',
     'jenkins', 'githubactions', 'gitlab', 'circleci', 'drone',
-    'git', 'github', 'bitbucket',
-    'jira', 'trello', 'confluence',
-    'grafana', 'prometheus', 'datadog', 'newrelic',
+    'git', 'github', 'bitbucket', 'jira',
+    'grafana', 'datadog', 'newrelic',
     'graylog', 'elastic', 'splunk',
     'postman', 'swagger',
-    'vault', 'sonarqube', 'snyk', 'auth0',
+    'vault', 'sonarqube',
   ],
 } as const;
 

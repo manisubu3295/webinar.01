@@ -27,10 +27,7 @@ import {
   siGithub,
   siBitbucket,
   siJira,
-  siTrello,
-  siConfluence,
   siGrafana,
-  siPrometheus,
   siDatadog,
   siNewrelic,
   siGraylog,
@@ -40,8 +37,6 @@ import {
   siSwagger,
   siVault,
   siSonarqubeserver,
-  siSnyk,
-  siAuth0,
 } from 'simple-icons';
 
 // Real, official brand marks — bundled locally at build time (simple-icons
@@ -76,17 +71,13 @@ const LOGO_BY_ITEM_KEY: Record<string, { path: string; hex: string; title: strin
   gitlab: siGitlab,
   circleci: siCircleci,
   drone: siDrone,
-  // Version Control & Collaboration
+  // Version Control & Collaboration (Jira grouped in here alongside Git hosting)
   git: siGit,
   github: siGithub,
   bitbucket: siBitbucket,
-  // Project Management
   jira: siJira,
-  trello: siTrello,
-  confluence: siConfluence,
   // Monitoring Tools
   grafana: siGrafana,
-  prometheus: siPrometheus,
   datadog: siDatadog,
   newrelic: siNewrelic,
   // Logging Tools
@@ -99,8 +90,6 @@ const LOGO_BY_ITEM_KEY: Record<string, { path: string; hex: string; title: strin
   // Security Tools
   vault: siVault,
   sonarqube: siSonarqubeserver,
-  snyk: siSnyk,
-  auth0: siAuth0,
 };
 
 export function hasTechLogo(itemKey: string): boolean {

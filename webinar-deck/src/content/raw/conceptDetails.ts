@@ -142,14 +142,6 @@ export const conceptDetails = {
     sketch: 'rollback'
   },
 
-  maintenance: {
-    name: "Post-Launch Maintenance",
-    tagline: "The longer tail after Monitoring and Rollback handle the moment something breaks.",
-    explanation: "The ongoing work after launch that isn't a dramatic incident: who's on call this week, which technical debt is safe to leave and which isn't, and when an old API version actually gets turned off.",
-    example: "The \"TODO: replace with your real...\" placeholders scattered across this deck's own tutorials are exactly the kind of small debt that's fine on day one and expensive if it's still there two years later.",
-    whenToUse: "From the day after launch, continuously \u2014 Monitoring tells you something broke; maintenance is the discipline that keeps fewer things breaking in the first place."
-  },
-
   apidesign: {
     name: "Does the API Contract Get Agreed First?",
     tagline: "Frontend and backend agreeing on a request/response shape before either side finishes building.",
